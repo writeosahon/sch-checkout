@@ -46,10 +46,10 @@
     <plugin name="cordova-plugin-ionic-keyboard" spec="2.1.2"/>
     <plugin name="cordova-sqlite-evcore-extbuild-free" spec="0.9.7"/>
     <!--<plugin name="cordova-plugin-sqlite-2" spec="1.0.5"/>-->
-    <plugin name="cordova-plugin-android-window-background" spec="https://github.com/writeosahon/android-window-background.git#oak-printing-ecommerce-background">
+    <!--<plugin name="cordova-plugin-android-window-background" spec="https://github.com/writeosahon/android-window-background.git#oak-printing-ecommerce-background">
         <variable name="WINDOW_BACKGROUND_COLOR" value="#ffffff"/>
         <variable name="WINDOW_NAVIGATION_BAR_COLOR" value="#363E7C"/>
-    </plugin>
+    </plugin>-->
     <!-- the edit-config below is used to attach the styles obtained from cordova-plugin-android-window-background -->
     <edit-config file="AndroidManifest.xml" target="/manifest/application/activity[@android:name='SchoolsCheckout']" mode="merge">
         <activity android:name="SchoolsCheckout" android:theme="@style/CordovaWindowBackgroundTheme"/>
