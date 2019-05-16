@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="310c6879-635e-49c1-a73a-51b9f2cd6c6d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.babelrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/Schools Checkout.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bootstrap-config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/account-page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/app-main-page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/billing-info-page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/categories-page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/change-password-page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/checkout-page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/completed-orders-page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/country-list.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/css/app-custom-font-icons/css/app-custom-font-style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/css/app-custom-font-icons/fonts/utopiasoftware-icons.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/css/app-custom-font-icons/fonts/utopiasoftware-icons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/css/app-custom-font-icons/fonts/utopiasoftware-icons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/css/app-custom-font-icons/fonts/utopiasoftware-icons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/css/app-custom-styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/css/app-custom-styles.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/css/app-images/blank-img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/css/app-images/category-icon-img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/css/app-images/facebook-signin-img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/css/app-images/google-signin-img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/css/app-images/home-icon-img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/css/app-images/my-account-icon-img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/css/app-images/oak-banner.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/css/app-images/oak-design-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/css/app-images/order-icon-img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/css/app-images/order-package-img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/css/app-images/perference-icon-img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/css/app-images/preference-icon-img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/css/app-images/search-icon-img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/css/app-images/share-app-logo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/css/app-images/share-app-logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/css/app-images/test-ad-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/css/app-images/test-ad-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/css/app-images/twitter-signin-img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/css/bootstrap-3.3.7.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/css/ej2-accordion-material.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/css/ej2-material.16.3.33.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/css/firebaseui.3.5.2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/css/flickity.2.1.2.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/css/font_awesome/css/font-awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/css/font_awesome/css/font-awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/css/font_awesome/css/v4-shims.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/css/font_awesome/css/v4-shims.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/css/font_awesome/fonts/fa-brands-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/css/font_awesome/fonts/fa-brands-400.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/css/font_awesome/fonts/fa-brands-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/css/font_awesome/fonts/fa-brands-400.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/css/font_awesome/fonts/fa-brands-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/css/font_awesome/fonts/fa-regular-400.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/css/font_awesome/fonts/fa-regular-400.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/css/font_awesome/fonts/fa-regular-400.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/css/font_awesome/fonts/fa-regular-400.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/css/font_awesome/fonts/fa-regular-400.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/css/font_awesome/fonts/fa-solid-900.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/css/font_awesome/fonts/fa-solid-900.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/css/font_awesome/fonts/fa-solid-900.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/css/font_awesome/fonts/fa-solid-900.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/css/font_awesome/fonts/fa-solid-900.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/css/ionicons/css/ionicons.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/css/ionicons/css/ionicons.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/css/ionicons/fonts/ionicons.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/css/ionicons/fonts/ionicons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/css/ionicons/fonts/ionicons.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/css/ionicons/fonts/ionicons.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/css/jquery.rateyo.2.3.5.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/css/kendo.custom.common.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/css/material-design-iconic-font/css/material-design-iconic-font.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/css/material-design-iconic-font/css/material-design-iconic-font.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/css/material-design-iconic-font/fonts/Material-Design-Iconic-Font.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/css/material-design-iconic-font/fonts/Material-Design-Iconic-Font.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/css/material-design-iconic-font/fonts/Material-Design-Iconic-Font.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/css/material-design-iconic-font/fonts/Material-Design-Iconic-Font.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/css/material-design-iconic-font/fonts/Material-Design-Iconic-Font.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/css/onsen-css-components.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/css/onsenui.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/customise-product-page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/home-page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/js/base64_v2.5.0.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/js/compiled-js/base-compiled.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/js/compiled-js/base-compiled.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/js/compiled-js/base.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/js/compiled-js/controller-compiled.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/js/compiled-js/controller-compiled.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/js/compiled-js/controller.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/js/compiled-js/model-compiled.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/js/compiled-js/model-compiled.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/js/compiled-js/model.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/js/crypto-pouch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/js/ej2-oak-app-components.16.3.33.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/js/firebase-app.5.8.3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/js/firebase-auth.5.8.3.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/js/firebaseui.3.5.2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/js/flickity.pkgd2.1.2.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/js/jquery-2.1.4.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/js/jquery.rateyo.2.3.5.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/js/kendo.2018.2.530/kendo.core.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/js/kendo.2018.2.530/kendo.fx.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/js/onsenui.2.10.5.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/js/parsley-2.8.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/js/parsley-word-validator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/js/polyfill.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/js/pouchdb.7.0.0.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/js/pouchdb.cordova-sqlite.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/js/random.1.0.8.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/js/url-search-params-polyfill-5.0.0.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/login-page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/order-details-page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/pending-orders-page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/product-details-page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/products-page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/profile-page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/search-page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/shipping-info-page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/track-order-page.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/www/view-cart-page.html" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="467">
+              <caret line="62" column="55" lean-forward="true" selection-start-line="62" selection-start-column="55" selection-end-line="62" selection-end-column="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2329">
+              <caret line="137" column="27" selection-start-line="137" selection-start-column="27" selection-end-line="137" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/js/compiled-js/controller.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="552">
+              <caret line="69" column="35" lean-forward="true" selection-start-line="69" selection-start-column="35" selection-end-line="69" selection-end-column="35" />
+              <folding>
+                <element signature="n#style#0;n#ons-icon#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ons-icon#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ons-icon#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ons-icon#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ons-icon#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ons-icon#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ons-icon#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ons-icon#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ons-icon#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ons-icon#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ons-icon#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ons-icon#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ons-icon#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ons-icon#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ons-icon#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ons-icon#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ons-icon#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ons-icon#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ons-icon#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ons-icon#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/www/index.html" />
+        <option value="$PROJECT_DIR$/config.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="784" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Schools Checkout" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Schools Checkout" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Schools Checkout" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Schools Checkout" type="462c0819:PsiDirectoryNode" />
+              <item name="www" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Schools Checkout" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Schools Checkout" type="462c0819:PsiDirectoryNode" />
+              <item name="www" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Schools Checkout" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Schools Checkout" type="462c0819:PsiDirectoryNode" />
+              <item name="www" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="compiled-js" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\write\Documents\UtopiaSoftware\Schools Checkout" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="310c6879-635e-49c1-a73a-51b9f2cd6c6d" name="Default Changelist" comment="" />
+      <created>1557921824642</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1557921824642</updated>
+      <workItem from="1557921826681" duration="4951000" />
+      <workItem from="1558015732978" duration="1649000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="6600000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="0" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/.babelrc">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2329">
+          <caret line="137" column="27" selection-start-line="137" selection-start-column="27" selection-end-line="137" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/compiled-js/controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="69" column="35" lean-forward="true" selection-start-line="69" selection-start-column="35" selection-end-line="69" selection-end-column="35" />
+          <folding>
+            <element signature="n#style#0;n#ons-icon#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-icon#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-icon#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-icon#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-icon#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-icon#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-icon#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-icon#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-icon#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-icon#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-icon#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-icon#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-icon#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-icon#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-icon#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-icon#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-icon#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-icon#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-icon#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-icon#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="467">
+          <caret line="62" column="55" lean-forward="true" selection-start-line="62" selection-start-column="55" selection-end-line="62" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Content-Security-Policy tag -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' wss: ws: data: http: https: blob: file: gap 'unsafe-inline' 'unsafe-eval'">
+
+    <title>Schools Checkout</title>
+
+    <!-- style library to incorporate bootstrap grid layout,helper classes & responsiveness -->
+    <link rel="stylesheet" href="css/bootstrap-3.3.7.min.css">
+
+    <!-- style libraries for the app (onsen ui) -->
+    <link rel="stylesheet" href="css/onsenui.min.css">
+    <link rel="stylesheet" href="css/onsen-css-components.min.css">
+    <!--<link rel="stylesheet" href="css/onsen-css-custom-components.min.css">-->
+
+    <!-- style libraries for font icons -->
+    <link rel="stylesheet" href="css/font_awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="css/material-design-iconic-font/css/material-design-iconic-font.min.css">
+
+    <!--- style library used for ej2 -->
+    <link rel="stylesheet" href="css/ej2-material.16.3.33.css">
+    <link rel="stylesheet" href="css/ej2-accordion-material.css">
+
+    <!--- kendo effects/animation style -->
+    <link rel="stylesheet" href="css/kendo.custom.common.css">
+
+    <!--- flickity carousel style -->
+    <link rel="stylesheet" href="css/flickity.2.1.2.min.css">
+
+    <!--- RateYo style library -->
+    <link rel="stylesheet" href="css/jquery.rateyo.2.3.5.min.css">
+
+    <!--- firebase ui style library -->
+    <link rel="stylesheet" href="css/firebaseui.3.5.2.css">
+
+    <!-- app custom font icons -->
+    <link rel="stylesheet" href="css/app-custom-font-icons/css/app-custom-font-style.css">
+
+    <!--- custom style for app -->
+    <link rel="stylesheet" href="css/app-custom-styles.min.css">
+
+
+    <!-- polyfill for ecma script 2015 -->
+    <script src="js/polyfill.min.js"></script>
+
+    <!-- polyfill for url-search-params polyfill -->
+    <script src="js/url-search-params-polyfill-5.0.0.js"></script>
+
+    <!-- library for base64 encoding and decoding -->
+    <script src="js/base64_v2.5.0.min.js"></script>
+
+    <!-- firebase libraries -->
+    <script src="js/firebase-app.5.8.3.js"></script>
+    <script src="js/firebase-auth.5.8.3.js"></script>
+    <script src="js/firebaseui.3.5.2.js"></script>
+
+    <!-- script library for onsen ui -->
+    <script src="js/onsenui.2.10.5.min.js"></script>
+
+
+    <!-- jquery library -->
+    <script src="js/jquery-2.1.4.min.js"></script>
+
+    <!-- parsley library -->
+    <script src="js/parsley-2.8.1.min.js"></script>
+    <script src="js/parsley-word-validator.js"></script>
+
+    <!-- flickity carousel library -->
+    <script src="js/flickity.pkgd2.1.2.min.js"></script>
+
+    <!-- RateYo js library -->
+    <script src="js/jquery.rateyo.2.3.5.min.js"></script>
+
+    <!-- kendo libraries -->
+    <script src="js/kendo.2018.2.530/kendo.core.min.js"></script>
+    <script src="js/kendo.2018.2.530/kendo.fx.min.js"></script>
+
+     <!--EJ2 Components Library -->
+    <script src="js/ej2-oak-app-components.16.3.33.min.js"></script>
+
+    <!-- ViewerJS Library -->
+    <!--<script src="js/viewer.min.js"></script>-->
+
+    <!-- PouchDB libraries -->
+    <script src="js/pouchdb.7.0.0.min.js"></script>
+    <script src="js/pouchdb.cordova-sqlite.min.js"></script>
+    <script src="js/crypto-pouch.js"></script>
+
+    <!-- Random-Js library -->
+    <script src="js/random.1.0.8.min.js"></script>
+
+    <!-- hybrid script libraries for cordova -->
+    <script src="cordova.js"></script>
+
+     <!--library file for SystemJS module loader-->
+    <!--<script src="js/system-0.21.0.js"></script>-->
+
+    <!-- app script -->
+    <script src="js/compiled-js/base-compiled.js"></script>
+    <script src="js/compiled-js/controller-compiled.js"></script>
+    <script src="js/compiled-js/model-compiled.js"></script>
+
+</head>
+<body>
+
+<!-- splitter container housing the app -->
+<ons-splitter>
+    <!--<ons-splitter-side id="side-menu" side="right" page="puzzle-menu-page.html" collapse width="100%">
+    </ons-splitter-side>-->
+    <ons-splitter-content id="splitter-content"></ons-splitter-content>
+</ons-splitter>
+
+
+<!-- login template -->
+<ons-template id="login-template">
+    <!-- login navigator -->
+    <ons-navigator id="login-navigator" page="login-page.html"></ons-navigator>
+</ons-template>
+
+<!-- app-main navigator template page -->
+<ons-template id="app-main-template">
+    <!-- app-main navigator -->
+    <ons-navigator id="app-main-navigator" page="app-main-page.html"></ons-navigator>
+</ons-template>
+
+<!-- loader modal -->
+<ons-modal id="loader-modal" direction="up" style="background-color: rgba(0,0,0,0.99);">
+    <div style="text-align: center; width: 100%">
+        <img src="css/app-images/oak-design-logo.png" style="width: 70%">
+        <div style="width: 100%; text-align: center; margin-top: 0.1em;">
+            <ons-icon icon="md-toys" size="50px" spin style="color: #3f51b5"></ons-icon>
+        </div>
+    </div>
+    <div id="loader-modal-message" style="text-align: center; margin-top: 0.5em; font-size: 1.2em; color: #ffffff;"></div>
+</ons-modal>
+
+<!-- modal is used to display order placement/receipt -->
+<ons-modal id="checkout-order-placement-modal" direction="up">
+    <div style="width: calc(100vw - 20vw); min-height: auto !important; margin-left: 10vw; margin-right: 10vw;
+    display: block; position: relative; overflow-y: visible; background: rgba(211, 211, 211, 1) !important;">
+        <div style="width: 100%;top: -50px; display: block; z-index: 3 !important;
+    overflow-y: visible; position: relative; text-align: center;">
+            <img src="css/app-images/order-package-img.png"
+                 style="height: 100px; width: auto;">
+
+            <div style="width: 100%; display: block; color: #000000; text-align: left;">
+                <h3 style="display: block; width: 100%; text-align: center; color: #363E7C;">
+                    Order Received
+                </h3>
+                <div style="padding: 1em; font-size: 1.01em; font-weight: 300;">
+                    Thank you. Your order
+                    <span style="font-weight: bold">#<span class="order-number"></span></span> has been received.<br>
+                    You will be notified of your order status and delivery date
+                </div>
+            </div>
+            <div style="width: 50%; margin-left: 25%; margin-right: 25%; margin-bottom: 2em; position: relative;">
+                <!-- event handler for the button is added by the controller code -->
+                <ons-button id="checkout-order-placement-modal-ok-button" disable-auto-styling modifier="large"
+                            style="background-color: #363E7C; color: #ffffff; border-radius: 21px;">
+                    OK</ons-button>
+            </div>
+        </div>
+    </div>
+</ons-modal>
+
+<!-- modal is used to display rating product rating -->
+<ons-modal id="rate-product-modal" direction="up">
+    <div style="width: calc(100vw - 20vw); min-height: auto !important; margin-left: 10vw; margin-right: 10vw;
+    display: block; position: relative; overflow-y: visible; background: rgba(255, 255, 255, 1) !important;">
+        <div style="width: 100%; display: block; z-index: 3 !important;
+    overflow-y: visible; position: relative; text-align: center;">
+
+            <div style="width: 100%; display: block; color: #000000; text-align: center;">
+                <h4 style="display: block; width: 100%; padding-top: 1em; text-align: center; color: #363E7C;">
+                    Rate & Review Product
+                </h4>
+                <div id="rate-product-rater-widget" style="width: 80%; margin-left: auto; margin-right: auto; text-align: center">
+                </div>
+
+                <textarea id="rate-product-comment" class="textarea" spellcheck="true" disabled
+                          style="font-size: 0.9em; width: 80%;
+                        caret-color: #3f51b5 !important; color: #3f51b5 !important; margin-top: 1em;
+                        margin-bottom: 1em; margin-left: 10%; margin-right: 10%;"
+                          placeholder="Comment (Optional)" rows="2"></textarea>
+
+            </div>
+            <div style="width: 100%; padding-bottom: 1em; text-align: center; position: relative;">
+                <!-- event handler for the button is added by the controller code -->
+                <ons-button id="rate-product-cancel-button" disable-auto-styling
+                            style="color: #d64113; background-color: #ffffff; border-radius: 21px; transform: scale(0.85)">
+                    CANCEL</ons-button>
+
+                <!-- event handler for the button is added by the controller code -->
+                <ons-button id="rate-product-rate-button" disabled disable-auto-styling
+                            style="color: #363E7C; background-color: #ffffff; border-radius: 21px;  transform: scale(0.85)">
+                    RATE</ons-button>
+            </div>
+        </div>
+    </div>
+</ons-modal>
+
+<!-- 3rd party login modal -->
+<ons-modal id="third-party-login-modal" direction="up" style="background-color: rgba(255, 255, 255, 1);">
+
+    <ons-fab id="third-party-login-modal-close-button" modifier="mini" position="top right"
+             style="background-color: #ffffff; color: #363E7C;
+             box-shadow: none; border: none">
+        <ons-icon icon="md-close" size="32px" style="color: #363E7C"></ons-icon>
+    </ons-fab>
+
+    <!-- content container -->
+    <div style="text-align: center; width: 100%; position: relative;">
+        <!-- login loader block -->
+        <div id="third-party-login-loader" style="width: 100%; height: 100%;
+            text-align: center; position: absolute; z-index: 4; display: block">
+            <ons-progress-circular indeterminate modifier="pull-hook" style="transform: scale(1.5);"></ons-progress-circular>
+        </div>
+        <!-- notice block (used for users signing in) -->
+        <div id="third-party-login-notice" style="padding: 1em; color: #000000; display: block;">
+            For user security, signing in with any of the platforms below will
+            reset any password on the user's <span style="font-weight: bold">Oak Exclusive</span> account
+        </div>
+        <!-- login block used to display the 3rd party login options -->
+        <div id="third-party-login-block"></div>
+    </div>
+</ons-modal>
+
+<!-- view reports additional popover -->
+<ons-popover id="search-page-search-input-popover" direction="down" cancelable mask-color="rgba(0,0,0,0)"
+             style="width: calc(100vw - 17px - 20px);">
+    <ons-list id="search-input-popover-list">
+    </ons-list>
+</ons-popover>
+
+<!-- create action sheet for deleting items from carts -->
+<ons-action-sheet id="view-cart-page-delete-cart-item-action-sheet" cancelable title="delete product from cart?" disable-auto-styling>
+    <ons-list id="delete-cart-item-list" style="display: block" disable-auto-styling>
+
+        <ons-list-item modifier="nodivider" lock-on-drag="true" disable-auto-styling>
+            <div class="center">
+                <div style="width: 100%; text-align: center;">
+
+                    <!-- event handler for the button is added by the controller code -->
+                    <button id="view-cart-page-delete-cart-item-yes" type="button" style="color: #d64113;
+                box-shadow: none; margin-right: 1em; margin-bottom:0.5em">
+                        <ons-ripple></ons-ripple>
+                        Yes</button>
+
+                    <!-- event handler for the button is added by the controller code -->
+                    <button id="view-cart-page-delete-cart-item-no" type="button" style="color: #3F51B5;
+                box-shadow: none; margin-right: 1em; margin-bottom:0.5em">
+                        <ons-ripple></ons-ripple>
+                        No</button>
+
+                </div>
+            </div>
+        </ons-list-item>
+
+    </ons-list>
+</ons-action-sheet>
+
+<!-- create action sheet for canceling an order -->
+<ons-action-sheet cancelable disable-auto-styling id="cancel-order-action-sheet" title="cancel order?">
+    <ons-list disable-auto-styling id="cancel-order-list" style="display: block">
+
+        <ons-list-item disable-auto-styling lock-on-drag="true" modifier="nodivider">
+            <div class="center">
+                <div style="width: 100%; text-align: center;">
+
+                    <!-- event handler for the button is added by the controller code -->
+                    <button id="cancel-order-yes" style="color: #d64113;
+                box-shadow: none; margin-right: 1em; margin-bottom:0.5em" type="button">
+                        <ons-ripple></ons-ripple>
+                        Yes</button>
+
+                    <!-- event handler for the button is added by the controller code -->
+                    <button id="cancel-order-no" style="color: #3F51B5;
+                box-shadow: none; margin-right: 1em; margin-bottom:0.5em" type="button">
+                        <ons-ripple></ons-ripple>
+                        No</button>
+
+                </div>
+            </div>
+        </ons-list-item>
+
+    </ons-list>
+</ons-action-sheet>
+
+<!-- container for app ej2 bottom toast -->
+<div class="page-toast"></div>
+
+<!-- container for app ej2 "timed" bottom toast -->
+<div class="timed-page-toast"></div>
+
+<div id="user-signout-iframe-container" style="visibility: hidden">
+    <iframe id="user-signout-iframe" src="https://shopoakexclusive.com/shop/"></iframe>
+</div>
+</body>
+</html>

@@ -1,0 +1,260 @@
+<ons-page id="login-page">
+    <ons-carousel id="login-carousel" fullscreen direction="horizontal" auto-scroll auto-scroll-ratio="0.1"
+                  item-width="100%" initial-index="0" animation="none">
+        <ons-carousel-item class="first">
+            <div style="width: 100%; text-align: center; margin-top: 1.5em;">
+                <img src="css/app-images/oak-banner.jpg" style="width: 9em;">
+            </div>
+
+            <div style="width: 100%; text-align: center; margin-top: 1em; position: fixed; z-index: 1000">
+                <ons-segment class="login-segment" active-index="0" style="min-width: 60%; max-width: 100%;">
+                    <button onclick="utopiasoftware[utopiasoftware_app_namespace].controller.
+                    loginPageViewModel.segmentButtonClicked(0);">Sign In</button>
+                    <button onclick="utopiasoftware[utopiasoftware_app_namespace].controller.
+                    loginPageViewModel.segmentButtonClicked(1);">Sign Up</button>
+                </ons-segment>
+            </div>
+
+            <div class="login-page-form-container" style="overflow-y: scroll; min-height: 50vh; max-height: 60vh;
+            position: absolute; width: 80%; padding: 0; margin-top: 2em;
+            margin-left: 10%; margin-right: 10%;">
+
+                <div style="width: 100%; text-align: center; color: #363E7C; margin-bottom: 1em;">
+                    <h1>Welcome</h1>
+                </div>
+
+                <form id="login-form" autocomplete="off" data-parsley-inputs="ons-input,textarea,select"
+                      data-parsley-excluded="ons-input[type=button], ons-input[type=submit],
+                              ons-input[type=reset], ons-input[type=hidden], [disabled], :hidden">
+
+                    <ons-row vertical-align="bottom" style="margin-bottom: 1.5em; text-align: center;">
+                        <ons-col width="100%" style="border: 2px solid lightgray; border-radius: 6px; background-color: #ffffff;
+                        color: #3f51b5;
+                    font-size: 1.3em; padding-top:0.5em;">
+                            <ons-icon icon="md-email" size="28px" fixed-width style="color: #3f51b5; margin-right: 0.5em;"></ons-icon>
+                            <ons-input id="login-email" type="email" style="width: 75%;
+                        caret-color: #3f51b5 !important; color: #3f51b5 !important;" required
+                                       placeholder="Email" disable-auto-styling
+                                       data-parsley-required-message="email is required"
+                                       data-parsley-type-message="provide a valid email"></ons-input>
+                        </ons-col>
+                    </ons-row>
+                    <ons-row vertical-align="bottom" style="margin-bottom: 2em; text-align: center;">
+                        <ons-col width="100%" style="border: 2px solid lightgray; border-radius: 6px; background-color: #ffffff;
+                        color: #3f51b5;
+                    font-size: 1.3em; padding-top:0.5em;">
+                            <ons-icon icon="md-utopiasoftware-icon-lock" size="28px" fixed-width style="color: #3f51b5; margin-right: 0.5em;"></ons-icon>
+                            <ons-input id="login-password" type="password" style="width: 75%;
+                        caret-color: #3f51b5 !important; color: #3f51b5 !important;" required
+                                       placeholder="Password" disable-auto-styling
+                                       data-parsley-required-message="password is required"></ons-input>
+                        </ons-col>
+                    </ons-row>
+                    <ons-row style="margin-bottom: 1.5em;">
+                        <ons-col width="20%"></ons-col>
+                        <ons-col width="60%" style="text-align: center">
+                            <ons-button style="border-color: #ffffff; background-color: #ffffff; color: #363E7C"
+                                        disable-auto-styling modifier="large"
+                                        onclick="utopiasoftware[utopiasoftware_app_namespace].controller.
+                                        loginPageViewModel.signinButtonClicked();">
+                                Sign In
+                            </ons-button>
+                        </ons-col>
+                        <ons-col width="20%"></ons-col>
+                    </ons-row>
+                    <ons-row class="third-party-signin-block" style="margin-bottom: 1em; display: none">
+                        <ons-col width="100%" style="text-align: center">
+                            <div style="width: 100%; text-align: center"
+                            onclick="utopiasoftware[utopiasoftware_app_namespace].controller.
+                            loginPageViewModel.thirdPartyLoginButtonClicked('sign in')">
+                                <ons-ripple></ons-ripple>
+                                <span style="font-weight: bold; color: #000000; font-size: 0.85em">OR USE </span>
+                                <img src="css/app-images/google-signin-img.png" style="height: 2.5em;">
+                                <img src="css/app-images/facebook-signin-img.png" style="height: 2.5em;">
+                                <img src="css/app-images/twitter-signin-img.png" style="height: 2.5em;">
+                            </div>
+                        </ons-col>
+                    </ons-row>
+
+                    <ons-row>
+                        <ons-col width="100%" style="text-align: center">
+                            <ons-button disable-auto-styling modifier="large--quiet"
+                                        style="color: #3f51b5; text-decoration: underline"
+                                        onclick="utopiasoftware[utopiasoftware_app_namespace].controller.
+                    loginPageViewModel.forgotPasswordButtonClicked();">
+                                Forgot Password?
+                            </ons-button>
+                        </ons-col>
+                    </ons-row>
+                </form>
+
+            </div>
+        </ons-carousel-item>
+
+        <ons-carousel-item class="second">
+            <div style="width: 100%; text-align: center; margin-top: 1.5em;">
+                <img src="css/app-images/oak-banner.jpg" style="width: 9em;">
+            </div>
+
+            <div style="width: 100%; text-align: center; margin-top: 1em; position: fixed; z-index: 1000">
+                <ons-segment class="login-segment" active-index="1" style="min-width: 60%; max-width: 100%;">
+                    <button onclick="utopiasoftware[utopiasoftware_app_namespace].controller.
+                    loginPageViewModel.segmentButtonClicked(0);">Sign In</button>
+                    <button onclick="utopiasoftware[utopiasoftware_app_namespace].controller.
+                    loginPageViewModel.segmentButtonClicked(1);">Sign Up</button>
+                </ons-segment>
+            </div>
+
+            <div class="login-page-form-container" style="overflow-y: scroll; min-height: 50vh; max-height: 60vh; position: absolute;
+            width: 80%; padding: 0; margin-top: 2em;
+            margin-left: 10%; margin-right: 10%;">
+
+                <div style="width: 100%; text-align: center; color: #363E7C; margin-bottom: 1em;">
+                    <h1>Sign Up Now</h1>
+                </div>
+
+                <form id="signup-form" autocomplete="off" data-parsley-inputs="ons-input,textarea,select"
+                      data-parsley-excluded="ons-input[type=button], ons-input[type=submit],
+                              ons-input[type=reset], ons-input[type=hidden], [disabled], :hidden">
+
+                    <ons-row vertical-align="bottom" style="margin-bottom: 1.5em; text-align: center;">
+                        <ons-col width="100%" style="border: 2px solid lightgray; border-radius: 6px; background-color: #ffffff;
+                        color: #3f51b5;
+                    font-size: 1.3em; padding-top:0.5em;">
+                            <ons-icon icon="md-email" size="28px" fixed-width style="color: #3f51b5; margin-right: 0.5em;"></ons-icon>
+                            <ons-input id="signup-email" type="email" style="width: 75%;
+                        caret-color: #3f51b5 !important; color: #3f51b5 !important;" required
+                                       placeholder="Email" disable-auto-styling
+                                       data-parsley-required-message="new email is required"
+                                       data-parsley-type-message="provide a valid email"></ons-input>
+                        </ons-col>
+                    </ons-row>
+                    <ons-row vertical-align="bottom" style="margin-bottom: 2em; text-align: center;">
+                        <ons-col width="100%" style="border: 2px solid lightgray; border-radius: 6px; background-color: #ffffff;
+                        color: #3f51b5;
+                    font-size: 1.3em; padding-top:0.5em;">
+                            <ons-icon icon="md-utopiasoftware-icon-lock" size="28px" fixed-width style="color: #3f51b5; margin-right: 0.5em;"></ons-icon>
+                            <ons-input id="signup-password" type="password" style="width: 60%;
+                        caret-color: #3f51b5 !important; color: #3f51b5 !important;" required
+                                       placeholder="Password" disable-auto-styling
+                                       data-parsley-required-message="new password is required"></ons-input>
+                            <button id="signup-password-view-button" type="button"
+                                    style="background-color: transparent; color: #3f51b5; float: right; clear: both"
+                            onclick="utopiasoftware[utopiasoftware_app_namespace].controller.loginPageViewModel.
+                            passwordVisibilityButtonClicked(this, 'signup-password');">
+                            </button>
+                        </ons-col>
+                    </ons-row>
+                    <ons-row style="margin-bottom: 1.5em;">
+                        <ons-col width="20%"></ons-col>
+                        <ons-col width="60%" style="text-align: center">
+                            <ons-button style="border-color: #ffffff; background-color: #ffffff; color: #363E7C"
+                                        disable-auto-styling modifier="large"
+                                 onclick="utopiasoftware[utopiasoftware_app_namespace].controller.loginPageViewModel.
+                                 signupButtonClicked()">
+                                Sign Up
+                            </ons-button>
+                        </ons-col>
+                        <ons-col width="20%"></ons-col>
+                    </ons-row>
+                    <ons-row class="third-party-signin-block" style="margin-bottom: 1em; display: none">
+                        <ons-col width="100%" style="text-align: center">
+                            <div style="width: 100%; text-align: center"
+                                 onclick="utopiasoftware[utopiasoftware_app_namespace].controller.
+                            loginPageViewModel.thirdPartyLoginButtonClicked('sign up')">
+                                <ons-ripple></ons-ripple>
+                                <span style="font-weight: bold; color: #000000; font-size: 0.85em">OR USE </span>
+                                <img src="css/app-images/google-signin-img.png" style="height: 2.5em;">
+                                <img src="css/app-images/facebook-signin-img.png" style="height: 2.5em;">
+                                <img src="css/app-images/twitter-signin-img.png" style="height: 2.5em;">
+                            </div>
+                        </ons-col>
+                    </ons-row>
+                    <ons-row>
+                        <ons-col width="100%" style="text-align: center">
+                            <ons-button disable-auto-styling modifier="large--quiet"
+                                        style="color: #3f51b5; text-decoration: underline"
+                                        onclick="utopiasoftware[utopiasoftware_app_namespace].controller.
+                    loginPageViewModel.segmentButtonClicked(0);">
+                                Already Have An Account?
+                            </ons-button>
+                        </ons-col>
+                    </ons-row>
+                </form>
+
+            </div>
+        </ons-carousel-item>
+
+        <ons-carousel-item class="third">
+            <div style="width: 100%; text-align: center; margin-top: 1.5em;">
+                <img src="css/app-images/oak-banner.jpg" style="width: 9em;">
+            </div>
+
+            <div style="width: 100%; text-align: center; margin-top: 1em; position: fixed; z-index: 1000">
+                <ons-segment class="login-segment" active-index="-1" style="min-width: 60%; max-width: 100%;">
+                    <button onclick="utopiasoftware[utopiasoftware_app_namespace].controller.
+                    loginPageViewModel.segmentButtonClicked(0);">Sign In</button>
+                    <button onclick="utopiasoftware[utopiasoftware_app_namespace].controller.
+                    loginPageViewModel.segmentButtonClicked(1);">Sign Up</button>
+                </ons-segment>
+            </div>
+
+            <div class="login-page-form-container" style="overflow-y: scroll; min-height: 50vh; max-height: 60vh;
+            position: absolute;
+            width: 80%; padding: 0; margin-top: 2em;
+            margin-left: 10%; margin-right: 10%;">
+
+                <div style="width: 100%; text-align: center; color: #363E7C; margin-bottom: 1em;">
+                    <h2>Reset Your Password</h2>
+                </div>
+
+                <form id="forgot-password-form" autocomplete="off" data-parsley-inputs="ons-input,textarea,select"
+                      data-parsley-excluded="ons-input[type=button], ons-input[type=submit],
+                              ons-input[type=reset], ons-input[type=hidden], [disabled], :hidden">
+
+                    <ons-row vertical-align="bottom" style="margin-bottom: 1.5em; text-align: center;">
+                        <ons-col width="100%" style="border: 2px solid lightgray; border-radius: 6px; background-color: #ffffff;
+                        color: #3f51b5;
+                    font-size: 1.3em; padding-top:0.5em;">
+                            <ons-icon icon="md-email" size="28px" fixed-width style="color: #3f51b5; margin-right: 0.5em;"></ons-icon>
+                            <ons-input id="forgot-password-email" type="email" style="width: 75%;
+                        caret-color: #3f51b5 !important; color: #3f51b5 !important;" required
+                                       placeholder="Email" disable-auto-styling
+                                       data-parsley-required-message="your registered email is required"
+                                       data-parsley-type-message="provide a valid email"></ons-input>
+                        </ons-col>
+                    </ons-row>
+
+                    <ons-row style="margin-bottom: 2.2em;">
+                        <ons-col width="15%"></ons-col>
+                        <ons-col width="70%" style="text-align: center">
+                            <ons-button style="border-color: #ffffff; background-color: #ffffff; color: #363E7C"
+                                        disable-auto-styling modifier="large"
+                                        onclick="utopiasoftware[utopiasoftware_app_namespace].controller.loginPageViewModel.
+                                 resetPasswordButtonClicked()">
+                                Reset Password
+                            </ons-button>
+                        </ons-col>
+                        <ons-col width="15%"></ons-col>
+                    </ons-row>
+                </form>
+
+            </div>
+        </ons-carousel-item>
+
+
+    </ons-carousel>
+
+    <ons-bottom-toolbar modifier="noshadow transparent">
+
+        <div style="text-align: center; width: 100%; white-space: normal"
+             onclick="utopiasoftware[utopiasoftware_app_namespace].controller.
+                    loginPageViewModel.termsAndConditionsLinkClicked();">
+            <ons-ripple></ons-ripple>
+            <span style="color: #000000">By accessing our service, you are agreeing to our </span>
+            <span style="color: #3f51b5">Terms & Conditions</span>
+        </div>
+
+    </ons-bottom-toolbar>
+
+</ons-page>

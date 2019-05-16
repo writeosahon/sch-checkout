@@ -1,0 +1,301 @@
+/** CUSTOM FONT ICONS FOR APP **/
+@font-face {
+  font-family: 'utopiasoftware-font-icons';
+  src: url('../fonts/utopiasoftware-icons.woff') format('woff'), url('../fonts/utopiasoftware-icons.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+.utopiasoftware-icon {
+  display: inline-block;
+  font: normal normal normal 14px/1 'utopiasoftware-font-icons';
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.utopiasoftware-icon-hc-lg {
+  font-size: 1.33333333em;
+  line-height: 0.75em;
+  vertical-align: -15%;
+}
+.utopiasoftware-icon-hc-2x {
+  font-size: 2em;
+}
+.utopiasoftware-icon-hc-3x {
+  font-size: 3em;
+}
+.utopiasoftware-icon-hc-4x {
+  font-size: 4em;
+}
+.utopiasoftware-icon-hc-5x {
+  font-size: 5em;
+}
+.utopiasoftware-icon-hc-fw {
+  width: 1.28571429em;
+  text-align: center;
+}
+.utopiasoftware-icon-hc-ul {
+  padding-left: 0;
+  margin-left: 2.14285714em;
+  list-style-type: none;
+}
+.utopiasoftware-icon-hc-ul > li {
+  position: relative;
+}
+.utopiasoftware-icon-hc-li {
+  position: absolute;
+  left: -2.14285714em;
+  width: 2.14285714em;
+  top: 0.14285714em;
+  text-align: center;
+}
+.utopiasoftware-icon-hc-li.utopiasoftware-icon-hc-lg {
+  left: -1.85714286em;
+}
+.utopiasoftware-icon-hc-border {
+  padding: .1em .25em;
+  border: solid 0.1em #9e9e9e;
+  border-radius: 2px;
+}
+.utopiasoftware-icon-hc-border-circle {
+  padding: .1em .25em;
+  border: solid 0.1em #9e9e9e;
+  border-radius: 50%;
+}
+.utopiasoftware-icon.pull-left {
+  float: left;
+  margin-right: .15em;
+}
+.utopiasoftware-icon.pull-right {
+  float: right;
+  margin-left: .15em;
+}
+.utopiasoftware-icon-hc-spin {
+  -webkit-animation: utopiasoftware-spin 1.5s infinite linear;
+  animation: utopiasoftware-spin 1.5s infinite linear;
+}
+.utopiasoftware-icon-hc-spin-reverse {
+  -webkit-animation: utopiasoftware-spin-reverse 1.5s infinite linear;
+  animation: utopiasoftware-spin-reverse 1.5s infinite linear;
+}
+@-webkit-keyframes utopiasoftware-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes utopiasoftware-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@-webkit-keyframes utopiasoftware-spin-reverse {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-359deg);
+    transform: rotate(-359deg);
+  }
+}
+@keyframes utopiasoftware-spin-reverse {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-359deg);
+    transform: rotate(-359deg);
+  }
+}
+.utopiasoftware-icon-hc-rotate-90 {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.utopiasoftware-icon-hc-rotate-180 {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.utopiasoftware-icon-hc-rotate-270 {
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+.utopiasoftware-icon-hc-flip-horizontal {
+  -webkit-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+.utopiasoftware-icon-hc-flip-vertical {
+  -webkit-transform: scale(1, -1);
+  -ms-transform: scale(1, -1);
+  transform: scale(1, -1);
+}
+.utopiasoftware-icon-hc-stack {
+  position: relative;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  vertical-align: middle;
+}
+.utopiasoftware-icon-hc-stack-1x,
+.utopiasoftware-icon-hc-stack-2x {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+.utopiasoftware-icon-hc-stack-1x {
+  line-height: inherit;
+}
+.utopiasoftware-icon-hc-stack-2x {
+  font-size: 2em;
+}
+.utopiasoftware-icon-hc-inverse {
+  color: #ffffff;
+}
+
+/** DEFINE FONT ICONS **/
+.zmdi-utopiasoftware-icon-scale-balance:before {
+  display: inline-block;
+  font: normal normal normal 14px/1 'utopiasoftware-font-icons';
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  content: '\e900';
+}
+.zmdi-utopiasoftware-icon-lock:before {
+  display: inline-block;
+  font: normal normal normal 14px/1 'utopiasoftware-font-icons';
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  content: '\e901';
+}
+.zmdi-utopiasoftware-icon-category:before {
+  display: inline-block;
+  font: normal normal normal 14px/1 'utopiasoftware-font-icons';
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  content: "\e902";
+}
+.zmdi-utopiasoftware-icon-file-document-box-outline:before {
+  display: inline-block;
+  font: normal normal normal 14px/1 'utopiasoftware-font-icons';
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  content: "\e903";
+}
+.zmdi-utopiasoftware-icon-settings-outline:before {
+  display: inline-block;
+  font: normal normal normal 14px/1 'utopiasoftware-font-icons';
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  content: "\e904";
+}
+.zmdi-utopiasoftware-icon-office-building:before {
+  display: inline-block;
+  font: normal normal normal 14px/1 'utopiasoftware-font-icons';
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  content: "\e905";
+}
+.zmdi-utopiasoftware-icon-mailbox:before {
+  display: inline-block;
+  font: normal normal normal 14px/1 'utopiasoftware-font-icons';
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  content: "\e906";
+}
+.zmdi-utopiasoftware-icon-check-circle-outline:before {
+  display: inline-block;
+  font: normal normal normal 14px/1 'utopiasoftware-font-icons';
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  content: "\e907";
+}
+.zmdi-utopiasoftware-icon-clipboard-text-outline:before {
+  display: inline-block;
+  font: normal normal normal 14px/1 'utopiasoftware-font-icons';
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  content: "\e908";
+}
+.zmdi-utopiasoftware-icon-truck-delivery:before {
+  display: inline-block;
+  font: normal normal normal 14px/1 'utopiasoftware-font-icons';
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  content: "\e909";
+}
+.zmdi-utopiasoftware-icon-cash:before {
+  display: inline-block;
+  font: normal normal normal 14px/1 'utopiasoftware-font-icons';
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  content: "\e90a";
+}
+.zmdi-utopiasoftware-icon-ticket-percent:before {
+  display: inline-block;
+  font: normal normal normal 14px/1 'utopiasoftware-font-icons';
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  content: "\e90b";
+}
+.zmdi-utopiasoftware-icon-note-text:before {
+  display: inline-block;
+  font: normal normal normal 14px/1 'utopiasoftware-font-icons';
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  content: "\e90c";
+}

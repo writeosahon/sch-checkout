@@ -1,0 +1,135 @@
+<!-- profile page -->
+<ons-page id="profile-page">
+
+    <ons-toolbar style="color: #ffffff !important; background-color: #3f51b5 !important;
+    box-shadow: none !important; border-bottom: lightgray 1px solid"
+                 static modifier="noshadow">
+        <div class="left" style="color: #ffffff !important; background-color: #3f51b5 !important;">
+            <ons-toolbar-button style="color: #ffffff !important; background-color: #3f51b5 !important;"
+                 onclick="utopiasoftware[utopiasoftware_app_namespace].controller.profilePageViewModel.backButtonClicked();">
+                <ons-icon icon="md-long-arrow-left"></ons-icon>
+            </ons-toolbar-button>
+        </div>
+        <div class="center title-bar" style="color: #ffffff !important; background-color: #3f51b5 !important; text-align: center;">
+            User Profile
+        </div>
+
+        <div class="right" style="color: #ffffff !important; background-color: #3f51b5 !important;">
+            <!--<ons-toolbar-button style="background-color: #3f51b5 !important; color: #d70000 !important;"-->
+                                <!--icon="md-favorite"></ons-toolbar-button>-->
+
+            <ons-toolbar-button style="color: #ffffff !important; background-color: #3f51b5 !important;"
+            onclick="utopiasoftware[utopiasoftware_app_namespace].controller.viewCartPageViewModel.viewCartPage()">
+                <ons-icon style="position: relative;" icon="md-shopping-cart">
+                    <span class="cart-count e-badge e-badge-overlap
+                            e-badge-notification e-badge-circle e-badge-danger"
+                          style="font-size: 0.5em;">0</span>
+                </ons-icon>
+            </ons-toolbar-button>
+        </div>
+    </ons-toolbar>
+
+    <div class="content">
+        <!-- page preloader -->
+        <ons-progress-bar class="page-preloader" indeterminate modifier="default-page-preloader"
+                          style="position: fixed; z-index: 2; width: 100%; display: block;"></ons-progress-bar>
+
+        <!-- page modal loader -->
+        <div class="modal" style="z-index: 2; background-color: transparent; display: table;">
+            <div class="modal__content">
+                <ons-progress-circular indeterminate modifier="pull-hook" style="transform: scale(1.5);"></ons-progress-circular>
+            </div>
+        </div>
+
+        <form id="profile-form" autocomplete="off" data-parsley-inputs="ons-input,textarea,select"
+              data-parsley-excluded="ons-input[type=button], ons-input[type=submit],
+                              ons-input[type=reset], ons-input[type=hidden], [disabled], :hidden">
+
+            <ons-row vertical-align="bottom" style="margin-top: 1.5em; margin-bottom: 1.5em; text-align: center;">
+                <ons-col width="5%"></ons-col>
+                <ons-col width="80%" style="border: 2px solid lightgray; border-radius: 6px;
+                background-color: lightgray !important; color: #3f51b5; font-size: 1.3em; padding-top:0.5em;">
+                    <ons-icon icon="md-email" size="28px" fixed-width style="color: #3f51b5; margin-right: 0.5em;"></ons-icon>
+                    <ons-input id="profile-email" type="email" style="width: 75%;
+                        caret-color: #3f51b5 !important; color: #3f51b5 !important;" readonly
+                               placeholder="Email" modifier="material transparent" float disable-auto-styling></ons-input>
+                </ons-col>
+                <ons-col width="15%"></ons-col>
+            </ons-row>
+
+            <ons-row vertical-align="bottom" style="margin-bottom: 1.5em; text-align: center;">
+                <ons-col width="5%"></ons-col>
+                <ons-col width="80%" style="border: 2px solid lightgray; border-radius: 6px; background-color: #ffffff;
+                        color: #3f51b5;
+                    font-size: 1.3em; padding-top:0.5em;">
+                    <ons-icon icon="md-account" size="28px" fixed-width style="color: #3f51b5; margin-right: 0.5em;"></ons-icon>
+                    <ons-input id="profile-first-name" type="text"
+                               pattern="[a-zA-Z]{1}[\w\s\-\.]*[a-zA-Z]{1}\s*" style="width: 75%;
+                        caret-color: #3f51b5 !important; color: #3f51b5 !important;" required
+                               placeholder="First Name" modifier="material" float disable-auto-styling
+                               data-parsley-required-message="your first name is required"
+                               data-parsley-pattern-message="incorrect first name. please check your spelling"></ons-input>
+                </ons-col>
+                <ons-col width="15%"></ons-col>
+            </ons-row>
+
+            <ons-row vertical-align="bottom" style="margin-bottom: 1.5em; text-align: center;">
+                <ons-col width="5%"></ons-col>
+                <ons-col width="80%" style="border: 2px solid lightgray; border-radius: 6px; background-color: #ffffff;
+                        color: #3f51b5;
+                    font-size: 1.3em; padding-top:0.5em;">
+                    <ons-icon icon="md-account" size="28px" fixed-width style="color: #3f51b5; margin-right: 0.5em;"></ons-icon>
+                    <ons-input id="profile-last-name" type="text"
+                               pattern="[a-zA-Z]{1}[\w\s\-\.]*[a-zA-Z]{1}\s*" style="width: 75%;
+                        caret-color: #3f51b5 !important; color: #3f51b5 !important;" required
+                               placeholder="Last Name" modifier="material" float disable-auto-styling
+                               data-parsley-required-message="your last name is required"
+                               data-parsley-pattern-message="incorrect last name. please check your spelling"></ons-input>
+                </ons-col>
+                <ons-col width="15%"></ons-col>
+            </ons-row>
+
+            <ons-row vertical-align="bottom" style="margin-bottom: 1.5em; text-align: center;">
+                <ons-col width="5%"></ons-col>
+                <ons-col width="80%" style="border: 2px solid lightgray; border-radius: 6px; background-color: #ffffff;
+                        color: #3f51b5;
+                    font-size: 1.3em; padding-top:0.5em;">
+                    <ons-icon icon="md-phone" size="28px" fixed-width style="color: #3f51b5; margin-right: 0.5em;"></ons-icon>
+                    <ons-input id="profile-phone-number" type="tel"
+                               pattern="((0[1-9]{1}[0-9]{9}|\+234[1-9]{1}[0-9]{9})|\+[1-9]{1}[0-9]{4,})" style="width: 75%;
+                        caret-color: #3f51b5 !important; color: #3f51b5 !important;"
+                               placeholder="Phone Number" modifier="material" float disable-auto-styling
+                               data-parsley-pattern-message="incorrect phone number format. phone number must be in international format (starting with '+')"
+                               data-parsley-type-message="incorrect phone number format. phone number must be in international format (starting with '+')"></ons-input>
+                </ons-col>
+                <ons-col width="15%"></ons-col>
+            </ons-row>
+
+        </form>
+    </div>
+
+
+    <ons-bottom-toolbar modifier="transparent" style="border-top: lightgray 1px solid">
+
+        <div style="text-align: center; width: 100%; margin-top: 6px;">
+            <button id="profile-cancel" type="button"
+                    style="color: #d64113; background-color: #ffffff; box-shadow: none"
+            onclick="utopiasoftware[utopiasoftware_app_namespace].controller.profilePageViewModel.
+            backButtonClicked();">
+                <ons-ripple></ons-ripple>
+                Cancel
+            </button>
+
+            <!-- button is disabled by default -->
+            <button id="profile-update" type="button" disabled
+                    style="color: #363E7C; background-color: #ffffff; box-shadow: none"
+                    onclick="utopiasoftware[utopiasoftware_app_namespace].controller.profilePageViewModel.
+                    updateButtonClicked()">
+                <ons-ripple></ons-ripple>
+                Update
+            </button>
+        </div>
+
+    </ons-bottom-toolbar>
+
+</ons-page>

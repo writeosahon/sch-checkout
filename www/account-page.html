@@ -1,0 +1,233 @@
+<!-- account page -->
+<ons-page id="account-page">
+
+    <div id="account-accordion" style="width: 100%">
+        <div> <!-- accordion item container -->
+            <div> <!-- accordion header container -->
+                <div><!-- accordion header -->
+                    <ons-list-title>
+                        <span class="zmdi zmdi-account-o" style="color: #3f51b5; font-size: 2em; margin-right: 0.1em"></span>
+                        Personal Info
+                    </ons-list-title>
+                </div>
+            </div>
+
+            <div> <!-- accordion panel container -->
+                <div> <!-- accordion content -->
+                    <ons-list id="account-personal-list" style="display: block">
+
+                        <ons-list-item modifier="longdivider" tappable lock-on-drag="true"
+                                       class="utopiasoftware-can-hide-list-item"
+                                       onclick="$('#app-main-navigator').get(0).pushPage('login-page.html')">
+                            <div class="center">
+                                <span class="list-item__title">Sign In</span>
+                            </div>
+                        </ons-list-item>
+
+                        <ons-list-item modifier="longdivider" tappable lock-on-drag="true"
+                                       class="utopiasoftware-can-hide-list-item utopiasoftware-user-sign-in-show"
+                                       style="display: none"
+                                       onclick="utopiasoftware[utopiasoftware_app_namespace].controller.
+                                       accountPageViewModel.signOutListItemClicked()">
+                            <div class="center">
+                                <span class="list-item__title">Sign Out</span>
+                            </div>
+                        </ons-list-item>
+
+                        <ons-list-item modifier="longdivider" tappable lock-on-drag="true"
+                                       onclick="utopiasoftware[utopiasoftware_app_namespace].controller.
+                                       accountPageViewModel.profileListItemClicked()">
+                            <div class="center">
+                                <span class="list-item__title">Profile</span>
+                            </div>
+                        </ons-list-item>
+
+                        <ons-list-item modifier="longdivider" tappable lock-on-drag="true"
+                                       class="utopiasoftware-can-hide-list-item utopiasoftware-user-sign-in-show"
+                                       style="display: none"
+                                       onclick="$('#app-main-navigator').get(0).pushPage('change-password-page.html')">
+                            <div class="center">
+                                <span class="list-item__title">Change Password</span>
+                            </div>
+                        </ons-list-item>
+
+                        <ons-list-item modifier="longdivider" tappable lock-on-drag="true"
+                                       class="utopiasoftware-can-hide-list-item utopiasoftware-user-sign-in-show"
+                                       style="display: none"
+                                       onclick="$('#app-main-navigator').get(0).pushPage('billing-info-page.html')">
+                            <div class="center">
+                                <span class="list-item__title">Billing Address</span>
+                            </div>
+                        </ons-list-item>
+
+                        <ons-list-item modifier="longdivider" tappable lock-on-drag="true"
+                                       class="utopiasoftware-can-hide-list-item utopiasoftware-user-sign-in-show"
+                                       style="display: none"
+                                       onclick="$('#app-main-navigator').get(0).pushPage('shipping-info-page.html')">
+                            <div class="center">
+                                <span class="list-item__title">Shipping Information</span>
+                            </div>
+                        </ons-list-item>
+
+                    </ons-list>
+                </div>
+            </div>
+
+        </div>
+
+        <div> <!-- accordion item container -->
+            <div> <!-- accordion header container -->
+                <div><!-- accordion header -->
+                    <ons-list-title>
+                        <span class="zmdi zmdi-utopiasoftware-icon-file-document-box-outline" style="color: #3f51b5; font-size: 2em; margin-right: 0.1em"></span>
+                        My Orders
+                    </ons-list-title>
+                </div>
+            </div>
+
+            <div> <!-- accordion panel container -->
+                <div> <!-- accordion content -->
+                    <ons-list id="account-order-list" style="display: block">
+
+                        <ons-list-item modifier="longdivider" tappable lock-on-drag="true"
+                                       onclick="utopiasoftware[utopiasoftware_app_namespace].controller.
+                                       accountPageViewModel.trackOrderListItemClicked()">
+                            <div class="center">
+                                <span class="list-item__title">Track Order</span>
+                            </div>
+                        </ons-list-item>
+
+                        <ons-list-item class="utopiasoftware-can-hide-list-item utopiasoftware-user-sign-in-show" lock-on-drag="true" modifier="longdivider"
+                                       style="display: none"
+                                       tappable
+                                       onclick="$('#app-main-navigator').get(0).pushPage('completed-orders-page.html')">
+                            <div class="center">
+                                <span class="list-item__title">Completed Orders</span>
+                            </div>
+                        </ons-list-item>
+
+                        <ons-list-item modifier="longdivider" tappable lock-on-drag="true"
+                                       class="utopiasoftware-can-hide-list-item utopiasoftware-user-sign-in-show"
+                                       style="display: none"
+                                       onclick="$('#app-main-navigator').get(0).pushPage('pending-orders-page.html')">
+                            <div class="center">
+                                <span class="list-item__title">Pending Orders</span>
+                            </div>
+                        </ons-list-item>
+
+                    </ons-list>
+                </div>
+            </div>
+
+        </div>
+
+        <div> <!-- accordion item container -->
+            <div> <!-- accordion header container -->
+                <div><!-- accordion header -->
+                    <ons-list-title>
+                        <span class="zmdi zmdi-utopiasoftware-icon-settings-outline" style="color: #3f51b5; font-size: 2em; margin-right: 0.1em"></span>
+                        Preferences
+                    </ons-list-title>
+                </div>
+            </div>
+
+            <div> <!-- accordion panel container -->
+                <div> <!-- accordion content -->
+                    <ons-list id="account-preference-list" style="display: block">
+
+                        <ons-list-item modifier="longdivider" tappable lock-on-drag="true"
+                                       onclick="">
+                            <div class="center">
+                                <label for="account-push-notification-preference-input">
+                                    <span class="list-item__title" style="padding-right: 1em;">
+                                        Push Notifications</span>
+                                </label>
+                                <ons-switch id="account-push-notification-preference"
+                                            input-id="account-push-notification-preference-input" disabled
+                                            disable-auto-styling></ons-switch>
+                            </div>
+                        </ons-list-item>
+
+                    </ons-list>
+                </div>
+            </div>
+
+        </div>
+
+        <div> <!-- accordion item container -->
+            <div> <!-- accordion header container -->
+                <div><!-- accordion header -->
+                    <ons-list-title>
+                        <span class="zmdi zmdi-info-outline" style="color: #3f51b5; font-size: 2em; margin-right: 0.1em"></span>
+                        About
+                    </ons-list-title>
+                </div>
+            </div>
+
+            <div> <!-- accordion panel container -->
+                <div> <!-- accordion content -->
+                    <ons-list id="account-about-list" style="display: block">
+
+                        <ons-list-item modifier="longdivider" tappable lock-on-drag="true"
+                                       onclick="utopiasoftware[utopiasoftware_app_namespace].controller.
+                                       accountPageViewModel.contactUsListItemClicked()">
+                            <div class="center">
+                                <span class="list-item__title">Contact Us</span>
+                            </div>
+                        </ons-list-item>
+
+                        <ons-list-item modifier="longdivider" tappable lock-on-drag="true"
+                                       onclick="utopiasoftware[utopiasoftware_app_namespace].controller.
+                                       accountPageViewModel.rateAppListItemClicked()">
+                            <div class="center">
+                                <span class="list-item__title">Rate App</span>
+                            </div>
+                        </ons-list-item>
+
+                        <ons-list-item modifier="longdivider" tappable lock-on-drag="true"
+                                       onclick="utopiasoftware[utopiasoftware_app_namespace].controller.
+                                       accountPageViewModel.shareAppListItemClicked()">
+                            <div class="center">
+                                <span class="list-item__title">Share App</span>
+                            </div>
+                        </ons-list-item>
+
+                        <ons-list-item modifier="longdivider" tappable lock-on-drag="true"
+                                       onclick="utopiasoftware[utopiasoftware_app_namespace].controller.
+                                       accountPageViewModel.tosListItemClicked()">
+                            <div class="center">
+                                <span class="list-item__title">Terms and Conditions</span>
+                            </div>
+                        </ons-list-item>
+
+                        <ons-list-item modifier="longdivider" tappable lock-on-drag="true"
+                                       onclick="utopiasoftware[utopiasoftware_app_namespace].controller.
+                                       accountPageViewModel.privacyPolicyListItemClicked()">
+                            <div class="center">
+                                <span class="list-item__title">Privacy Policy</span>
+                            </div>
+                        </ons-list-item>
+
+                        <ons-list-item modifier="longdivider" lock-on-drag="true"
+                                       onclick="">
+                            <div class="center">
+                                <span class="list-item__title">App Version<span id="account-about-list-app-version" style="padding-left: 1em"></span></span>
+                            </div>
+                        </ons-list-item>
+
+                        <ons-list-item modifier="longdivider" lock-on-drag="true"
+                                       onclick="">
+                            <div class="center">
+                                <span class="list-item__title">Version Released<span id="account-about-list-version-release" style="padding-left: 1em"></span></span>
+                            </div>
+                        </ons-list-item>
+
+                    </ons-list>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</ons-page>

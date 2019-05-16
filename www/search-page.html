@@ -1,0 +1,21 @@
+<!-- search page -->
+<ons-page id="search-page">
+
+    <ons-toolbar style="color: #3f51b5 !important; background-color: #ffffff !important; box-shadow: none !important;"
+                 static modifier="noshadow">
+
+        <div class="center search-page-input-container"
+             style="color: #3f51b5 !important; background-color: #ffffff !important; text-align: center">
+            <input id="search-page-input" type="search" style="width: 100%; margin-top: 0.0em;"
+            onkeypress="utopiasoftware[utopiasoftware_app_namespace].controller.searchPageViewModel.enterButtonClicked(event);">
+        </div>
+
+        <div class="right" style="color: #3f51b5 !important; background-color: #ffffff !important; min-width: 20px !important;">
+
+        </div>
+    </ons-toolbar>
+
+    <ons-list id="search-list" style="display: block;">
+
+    </ons-list>
+</ons-page>

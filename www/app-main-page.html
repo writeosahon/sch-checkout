@@ -1,0 +1,38 @@
+<!-- app main page -->
+<ons-page id="app-main-page">
+
+    <ons-toolbar style="color: #ffffff !important; background-color: #3f51b5 !important;
+    box-shadow: none !important; border-bottom: lightgray 1px solid"
+                 static modifier="noshadow">
+        <div class="left" style="color: #ffffff !important; background-color: #3f51b5 !important;">
+            <!--<img src="css/app-images/oak-design-logo.png" style="height: 52%; display: inline-block; margin-bottom: 4px; margin-left: 2px;">-->
+        </div>
+
+        <div class="center title-bar" style="color: #ffffff !important; background-color: #3f51b5 !important; text-align: center !important;">
+            OAK
+        </div>
+
+        <div class="right" style="color: #ffffff !important; background-color: #3f51b5 !important;">
+            <!--<ons-toolbar-button style="background-color: #3f51b5 !important; color: #d70000 !important;"-->
+                                <!--icon="md-favorite"></ons-toolbar-button>-->
+
+            <ons-toolbar-button class="cart-count-button" style="color: #ffffff !important; background-color: #3f51b5 !important;"
+            onclick="utopiasoftware[utopiasoftware_app_namespace].controller.viewCartPageViewModel.viewCartPage()">
+                <ons-icon style="position: relative;" icon="md-shopping-cart">
+                    <span class="cart-count e-badge e-badge-overlap
+                            e-badge-notification e-badge-circle e-badge-danger"
+                          style="font-size: 0.5em;">0</span>
+                </ons-icon>
+            </ons-toolbar-button>
+        </div>
+    </ons-toolbar>
+
+    <ons-tabbar id="app-main-tabbar" position="bottom" modifier="autogrow" disable-auto-styling>
+        <ons-tab id="app-main-tab-home" page="home-page.html" label="Home" icon="md-home" active disable-auto-styling></ons-tab>
+        <ons-tab id="app-main-tab-categories" label="Products" icon="md-utopiasoftware-icon-category" page="categories-page.html" disable-auto-styling></ons-tab>
+        <ons-tab id="app-main-tab-search" label="Search" icon="md-search" page="search-page.html" disable-auto-styling></ons-tab>
+        <ons-tab id="app-main-tab-my-account" label="Account" icon="md-account" page="account-page.html" disable-auto-styling></ons-tab>
+        <ons-tab id="app-main-tab-products" label="" page="products-page.html" disable-auto-styling style="display: none"></ons-tab>
+    </ons-tabbar>
+
+</ons-page>

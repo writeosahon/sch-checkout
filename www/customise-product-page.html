@@ -1,0 +1,76 @@
+<!-- customise-product page -->
+<ons-page id="customise-product-page">
+
+    <ons-toolbar style="color: #ffffff !important; background-color: #3f51b5 !important;
+    box-shadow: none !important; border-bottom: lightgray 1px solid"
+                 static modifier="noshadow">
+        <div class="left" style="color: #ffffff !important; background-color: #3f51b5 !important;">
+            <ons-toolbar-button style="color: #ffffff !important; background-color: #3f51b5 !important;"
+                 onclick="utopiasoftware[utopiasoftware_app_namespace].controller.customiseProductPageViewModel.backButtonClicked();">
+                <ons-icon icon="md-long-arrow-left"></ons-icon>
+            </ons-toolbar-button>
+        </div>
+        <div class="center title-bar" style="color: #ffffff !important; background-color: #3f51b5 !important; text-align: center;">
+            Customise Product
+        </div>
+
+        <div class="right" style="color: #ffffff !important; background-color: #3f51b5 !important;">
+            <!--<ons-toolbar-button style="background-color: #3f51b5 !important; color: #d70000 !important;"-->
+                                <!--icon="md-favorite"></ons-toolbar-button>-->
+
+            <ons-toolbar-button style="color: #ffffff !important; background-color: #3f51b5 !important;"
+            onclick="utopiasoftware[utopiasoftware_app_namespace].controller.viewCartPageViewModel.viewCartPage()">
+                <ons-icon style="position: relative;" icon="md-shopping-cart">
+                    <span class="cart-count e-badge e-badge-overlap
+                            e-badge-notification e-badge-circle e-badge-danger"
+                          style="font-size: 0.5em;">0</span>
+                </ons-icon>
+            </ons-toolbar-button>
+        </div>
+    </ons-toolbar>
+    <!-- page pull hook -->
+    <ons-pull-hook id="customise-product-page-pull-hook" threshold-height="120px" fixed-content style="text-align: center">
+        <ons-fab id="customise-product-page-pull-hook-fab" modifier="mini" style="background-color: #ffffff; color: #ff0000;
+        box-shadow: none; border: 1px #ff0000 solid">
+            <ons-icon icon="md-long-arrow-down" size="24px" style="color: #363E7C"></ons-icon>
+        </ons-fab>
+    </ons-pull-hook>
+    <!-- page preloader -->
+    <ons-progress-bar class="page-preloader" indeterminate modifier="default-page-preloader"
+                      style="position: fixed; z-index: 2; width: 100%; display: block;"></ons-progress-bar>
+
+    <div id="customise-product-page-iframe-container" style="display: block; position: relative;
+                              width: calc(100% - 0px); height: calc(100% - 3% - 0px); top: 3%;">
+        <div class="modal" style="z-index: 2; background-color: transparent; display: none;">
+            <div class="modal__content">
+                <ons-progress-circular indeterminate modifier="pull-hook" style="transform: scale(1.5);"></ons-progress-circular>
+            </div>
+        </div>
+        <iframe id="customise-product-page-iframe" src=""
+                style="width: 100%; height: 100%; border: none"></iframe>
+    </div>
+
+    <ons-bottom-toolbar modifier="transparent" style="border-top: lightgray 1px solid">
+
+        <div style="text-align: center; width: 100%; margin-top: 6px;">
+            <button id="customise-product-cancel" type="button"
+                    style="color: #d64113; background-color: #ffffff; box-shadow: none"
+            onclick="utopiasoftware[utopiasoftware_app_namespace].controller.customiseProductPageViewModel.
+            backButtonClicked();">
+                <ons-ripple></ons-ripple>
+                Cancel
+            </button>
+
+            <!-- button is disabled by default -->
+            <button id="customise-product-add-to-cart" type="button" disabled
+                    style="color: #363E7C; background-color: #ffffff; box-shadow: none"
+                    onclick="utopiasoftware[utopiasoftware_app_namespace].controller.customiseProductPageViewModel.
+                    addToCartButtonClicked()">
+                <ons-ripple></ons-ripple>
+                Add To Cart
+            </button>
+        </div>
+
+    </ons-bottom-toolbar>
+
+</ons-page>

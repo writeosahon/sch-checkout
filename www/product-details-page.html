@@ -1,0 +1,177 @@
+<!-- product-details page -->
+<ons-page id="product-details-page">
+
+    <ons-toolbar style="color: #ffffff !important; background-color: #3f51b5 !important;
+    box-shadow: none !important; border-bottom: lightgray 1px solid"
+                 static modifier="noshadow">
+        <div class="left" style="color: #ffffff !important; background-color: #3f51b5 !important;">
+            <ons-toolbar-button style="color: #ffffff !important; background-color: #3f51b5 !important;"
+                 onclick="utopiasoftware[utopiasoftware_app_namespace].controller.productDetailsPageViewModel.backButtonClicked();">
+                <ons-icon icon="md-long-arrow-left"></ons-icon>
+            </ons-toolbar-button>
+        </div>
+        <div class="center title-bar" style="color: #ffffff !important; background-color: #3f51b5 !important; text-align: center;">
+            Product Details
+        </div>
+
+        <div class="right" style="color: #ffffff !important; background-color: #3f51b5 !important;">
+            <!--<ons-toolbar-button style="background-color: #3f51b5 !important; color: #d70000 !important;"-->
+                                <!--icon="md-favorite"></ons-toolbar-button>-->
+
+            <ons-toolbar-button style="color: #ffffff !important; background-color: #3f51b5 !important;"
+                                onclick="utopiasoftware[utopiasoftware_app_namespace].controller.viewCartPageViewModel.viewCartPage()">
+                <ons-icon style="position: relative;" icon="md-shopping-cart">
+                    <span class="cart-count e-badge e-badge-overlap
+                            e-badge-notification e-badge-circle e-badge-danger"
+                          style="font-size: 0.5em;">0</span>
+                </ons-icon>
+            </ons-toolbar-button>
+        </div>
+    </ons-toolbar>
+    <!-- page pull hook -->
+    <ons-pull-hook id="product-details-page-pull-hook" threshold-height="120px" fixed-content style="text-align: center">
+        <ons-fab id="product-details-page-pull-hook-fab" modifier="mini" style="background-color: #ffffff; color: #ff0000;
+        box-shadow: none; border: 1px #ff0000 solid">
+            <ons-icon icon="md-long-arrow-down" size="24px" style="color: #363E7C"></ons-icon>
+        </ons-fab>
+    </ons-pull-hook>
+    <!-- page preloader -->
+    <ons-progress-bar class="page-preloader" indeterminate modifier="default-page-preloader"
+                      style="position: fixed; z-index: 2; width: 100%; display: block;"></ons-progress-bar>
+    <!-- page modal loader -->
+    <div class="modal" style="z-index: 2; background-color: transparent; display: none;">
+        <div class="modal__content">
+            <ons-progress-circular indeterminate modifier="pull-hook" style="transform: scale(1.5);"></ons-progress-circular>
+        </div>
+    </div>
+
+    <div class="e-card" style="box-shadow: none; border: none">
+        <div class="e-card-image" style="min-height: 120px;">
+        </div>
+        <div class="e-card-header">
+            <div class="e-card-header-caption"  style="padding-left: 3px; padding-right: 5px">
+                <div class="e-card-title" style="text-align: center;
+                white-space: normal; margin-top: 0.5em;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <ons-list id="product-details-list" style="display: block">
+
+        <ons-list-item modifier="longdivider" lock-on-drag="true"
+                       onclick="">
+            <div class="center row">
+                <div class="col-xs-6">
+                    <span class="list-item__title" style="color: #3F51B5; display: block;">Price</span>
+                    <span class="list-item__subtitle product-details-price" style="display: block"></span>
+                    <span class="list-item__subtitle product-details-regular-price" style="text-decoration: line-through;
+                    display: block;"></span>
+                </div>
+                <div class="col-xs-6" style="padding-left: 10px; padding-right: 5px;">
+                    <input id="product-details-quantity" type="number">
+                </div>
+            </div>
+        </ons-list-item>
+
+        <ons-list-item modifier="nodivider" lock-on-drag="true" expandable
+                       onclick="">
+            <div class="center">
+                <span class="list-item__title" style="color: #3F51B5;">Product Options</span>
+            </div>
+            <div class="expandable-content row product-details-variations" style="white-space: normal;">
+            </div>
+        </ons-list-item>
+
+        <ons-list-item modifier="nodivider" lock-on-drag="true" expandable
+                       onclick="">
+            <div class="center">
+                <span class="list-item__title" style="color: #3F51B5;">Description</span>
+            </div>
+            <div class="expandable-content product-details-description" style="white-space: normal;">
+            </div>
+        </ons-list-item>
+
+        <ons-list-item modifier="nodivider" lock-on-drag="true"
+                       onclick="">
+            <div class="center">
+                <span class="list-item__title" style="color: #3F51B5;">Rating</span>
+                <div class="product-details-rating" style="color: gold; font-size: 0.9em !important;">
+
+                </div>
+            </div>
+        </ons-list-item>
+
+        <ons-list-item modifier="nodivider" lock-on-drag="true" expandable
+                       onclick="">
+            <div class="center">
+                <span class="list-item__title" style="color: #3F51B5;">More Details</span>
+            </div>
+            <div class="expandable-content product-details-more-description" style="white-space: normal;">
+            </div>
+        </ons-list-item>
+
+        <ons-list-item modifier="nodivider" lock-on-drag="true"
+                       onclick="">
+            <div class="center" style="text-align: left">
+                <div style="width: 100%; display: block;">
+                    <button id="product-details-review" style="color: #F39C12;
+                box-shadow: none; margin-right: 1em; margin-bottom:0.5em" type="button"
+                            onclick="utopiasoftware[utopiasoftware_app_namespace].controller.
+                    productDetailsPageViewModel.rateButtonClicked();">
+                        <ons-ripple></ons-ripple>
+                        Rate Product</button>
+
+                    <button id="product-details-share" type="button" style="color: blue;
+                box-shadow: none; margin-right: 1em; margin-bottom:0.5em"
+                    onclick="utopiasoftware[utopiasoftware_app_namespace].controller.
+                    productDetailsPageViewModel.shareButtonClicked()">
+                        <ons-ripple></ons-ripple>
+                        Share</button>
+                </div>
+            </div>
+        </ons-list-item>
+
+        <ons-list-item modifier="nodivider" lock-on-drag="true" expandable
+                       onclick="">
+            <div class="center">
+                <span class="list-item__title" style="color: #3F51B5;">Dimensions</span>
+            </div>
+            <div class="expandable-content product-details-dimensions" style="white-space: normal">
+            </div>
+        </ons-list-item>
+
+        <ons-list-item modifier="nodivider" lock-on-drag="true"
+                       onclick="">
+            <div class="center">
+                <span class="list-item__title" style="color: #3F51B5;">Weight</span>
+                <span class="list-item__subtitle product-details-weight">(Not Available)</span>
+            </div>
+        </ons-list-item>
+
+
+    </ons-list>
+
+    <ons-bottom-toolbar modifier="transparent" style="border-top: lightgray 1px solid">
+
+        <div style="text-align: center; width: 100%; margin-top: 6px;">
+            <button id="product-details-add-to-cart" type="button" disabled
+                    style="color: #363E7C; background-color: #ffffff; box-shadow: none"
+                    onclick="utopiasoftware[utopiasoftware_app_namespace].controller.
+                    productDetailsPageViewModel.addToCartButtonClicked()">
+                <ons-ripple></ons-ripple>
+                Add To Cart
+            </button>
+
+            <button id="product-details-customise-product" type="button"
+                    style="color: #363E7C; background-color: #ffffff; box-shadow: none"
+                    onclick="utopiasoftware[utopiasoftware_app_namespace].controller.
+                    productDetailsPageViewModel.customiseButtonClicked()">
+                <ons-ripple></ons-ripple>
+                Customise
+            </button>
+        </div>
+
+    </ons-bottom-toolbar>
+
+</ons-page>

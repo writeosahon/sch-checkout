@@ -1,0 +1,169 @@
+<!-- billing info page -->
+<ons-page id="billing-info-page">
+
+    <ons-toolbar style="color: #ffffff !important; background-color: #3f51b5 !important;
+    box-shadow: none !important; border-bottom: lightgray 1px solid"
+                 static modifier="noshadow">
+        <div class="left" style="color: #ffffff !important; background-color: #3f51b5 !important;">
+            <ons-toolbar-button style="color: #ffffff !important; background-color: #3f51b5 !important;"
+                 onclick="utopiasoftware[utopiasoftware_app_namespace].controller.billingInfoPageViewModel.backButtonClicked();">
+                <ons-icon icon="md-long-arrow-left"></ons-icon>
+            </ons-toolbar-button>
+        </div>
+        <div class="center title-bar" style="color: #ffffff !important; background-color: #3f51b5 !important; text-align: center;">
+            Billing Address
+        </div>
+
+        <div class="right" style="color: #ffffff !important; background-color: #3f51b5 !important;">
+            <!--<ons-toolbar-button style="background-color: #3f51b5 !important; color: #d70000 !important;"-->
+                                <!--icon="md-favorite"></ons-toolbar-button>-->
+
+            <ons-toolbar-button style="color: #ffffff !important; background-color: #3f51b5 !important;"
+            onclick="utopiasoftware[utopiasoftware_app_namespace].controller.viewCartPageViewModel.viewCartPage()">
+                <ons-icon style="position: relative;" icon="md-shopping-cart">
+                    <span class="cart-count e-badge e-badge-overlap
+                            e-badge-notification e-badge-circle e-badge-danger"
+                          style="font-size: 0.5em;">0</span>
+                </ons-icon>
+            </ons-toolbar-button>
+        </div>
+    </ons-toolbar>
+
+    <div class="content">
+        <!-- page preloader -->
+        <ons-progress-bar class="page-preloader" indeterminate modifier="default-page-preloader"
+                          style="position: fixed; z-index: 2; width: 100%; display: block;"></ons-progress-bar>
+
+        <!-- page modal loader -->
+        <div class="modal" style="z-index: 2; background-color: transparent; display: table;">
+            <div class="modal__content">
+                <ons-progress-circular indeterminate modifier="pull-hook" style="transform: scale(1.5);"></ons-progress-circular>
+            </div>
+        </div>
+
+        <form id="billing-info-form" autocomplete="off" data-parsley-inputs="ons-input,textarea,#billing-info-country,#billing-info-state"
+              data-parsley-excluded="[type=button], [type=submit],
+                              [type=reset], [type=hidden], [disabled]">
+
+            <ons-row vertical-align="bottom" style="margin-top: 1.5em; margin-bottom: 1em; text-align: center;">
+                <ons-col width="5%"></ons-col>
+                <ons-col width="80%" style="border: 2px solid lightgray; border-radius: 6px; background-color: #ffffff;
+                        color: #3f51b5;
+                    font-size: 1.3em; padding-top:0.5em;">
+                    <ons-icon icon="md-utopiasoftware-icon-office-building" size="28px" fixed-width style="color: #3f51b5; margin-right: 0.5em;"></ons-icon>
+                    <ons-input id="billing-info-company" type="text" style="width: 75%;
+                        caret-color: #3f51b5 !important; color: #3f51b5 !important;"
+                               placeholder="Company Name (Optional)" modifier="material" float disable-auto-styling
+                               data-parsley-minwords="1"
+                               data-parsley-minwords-message="incorrect company. please check your spelling"></ons-input>
+                </ons-col>
+                <ons-col width="15%"></ons-col>
+            </ons-row>
+
+            <ons-row vertical-align="bottom" style="margin-bottom: 1.5em; text-align: center;">
+                <ons-col width="5%"></ons-col>
+                <ons-col width="80%" style="border: 2px solid lightgray; border-radius: 6px; background-color: #ffffff;
+                        color: #3f51b5;
+                    font-size: 1.3em; padding-top:0.5em;">
+                    <label id="billing-info-address-1-label" class="address-label" for="billing-info-address-1">
+                        Address 1</label>
+                    <ons-icon icon="md-city-alt" size="28px" fixed-width style="color: #3f51b5; margin-right: 0.5em;"></ons-icon>
+                    <textarea id="billing-info-address-1" class="textarea textarea--transparent" style="width: 75%;
+                        caret-color: #3f51b5 !important; color: #3f51b5 !important;" required
+                               placeholder="Address Line 1" rows="2"
+                               data-parsley-minwords="2"
+                               data-parsley-required-message="address is required"
+                               data-parsley-minwords-message="incorrect address. please check your spelling"></textarea>
+                </ons-col>
+                <ons-col width="15%"></ons-col>
+            </ons-row>
+
+            <ons-row vertical-align="bottom" style="margin-bottom: 1.5em; text-align: center;">
+                <ons-col width="5%"></ons-col>
+                <ons-col width="80%" style="border: 2px solid lightgray; border-radius: 6px; background-color: #ffffff;
+                        color: #3f51b5;
+                    font-size: 1.3em; padding-top:0.5em;">
+                    <label id="billing-info-address-2-label" class="address-label" for="billing-info-address-2">
+                        Address 2 (Optional)</label>
+                    <ons-icon icon="md-city-alt" size="28px" fixed-width style="color: #3f51b5; margin-right: 0.5em;"></ons-icon>
+                    <textarea id="billing-info-address-2" class="textarea textarea--transparent" style="width: 75%;
+                        caret-color: #3f51b5 !important; color: #3f51b5 !important;"
+                              placeholder="Address Line 2 (Optional)" rows="2"
+                              data-parsley-minwords="2"
+                              data-parsley-minwords-message="incorrect address. please check your spelling"></textarea>
+                </ons-col>
+                <ons-col width="15%"></ons-col>
+            </ons-row>
+
+            <ons-row vertical-align="bottom" style="margin-bottom: 1em; text-align: center;">
+                <ons-col width="5%"></ons-col>
+                <ons-col width="80%" style="border: 2px solid lightgray; border-radius: 6px; background-color: #ffffff;
+                        color: #3f51b5;
+                    font-size: 1.3em; padding-top:0.5em;">
+                    <ons-icon icon="md-utopiasoftware-icon-mailbox" size="28px" fixed-width style="color: #3f51b5; margin-right: 0.5em;"></ons-icon>
+                    <ons-input id="billing-info-postcode" type="text" style="width: 75%;
+                        caret-color: #3f51b5 !important; color: #3f51b5 !important;"
+                               placeholder="Postal Code (Optional)" modifier="material" float disable-auto-styling
+                               data-parsley-minwords="1"
+                               data-parsley-minwords-message="incorrect postal/zip code"></ons-input>
+                </ons-col>
+                <ons-col width="15%"></ons-col>
+            </ons-row>
+
+            <ons-row vertical-align="bottom" style="margin-bottom: 1em; text-align: center;">
+                <ons-col width="5%"></ons-col>
+                <ons-col width="80%" style="border: 2px solid lightgray; border-radius: 6px; background-color: #ffffff;
+                        color: #3f51b5;
+                    font-size: 1.3em; padding-top:0.5em;">
+                    <ons-icon icon="md-pin" size="28px" fixed-width style="color: #3f51b5; margin-right: 0.5em;"></ons-icon>
+                    <ons-input id="billing-info-city" type="text" style="width: 75%;
+                        caret-color: #3f51b5 !important; color: #3f51b5 !important;" required
+                               placeholder="City" modifier="material" float disable-auto-styling
+                               data-parsley-minwords="1"
+                               data-parsley-required-message="city is required"
+                               data-parsley-minwords-message="incorrect city. please check your spelling"></ons-input>
+                </ons-col>
+                <ons-col width="15%"></ons-col>
+            </ons-row>
+
+            <ons-row vertical-align="bottom" style="margin-bottom: 1.5em;">
+                <ons-col width="5%"></ons-col>
+                <ons-col width="40%" style="background-color: #ffffff; color: #3f51b5;">
+                    <input id="billing-info-country" type="text" style="width: 100%" required
+                           data-parsley-required-message="country is required">
+                </ons-col>
+                <ons-col width="5px"></ons-col>
+                <ons-col width="40%" style="background-color: #ffffff; color: #3f51b5;">
+                    <input id="billing-info-state" type="text" style="width: 100%" required
+                           data-parsley-required-message="state is required">
+                </ons-col>
+            </ons-row>
+
+        </form>
+    </div>
+
+
+    <ons-bottom-toolbar modifier="transparent" style="border-top: lightgray 1px solid">
+
+        <div style="text-align: center; width: 100%; margin-top: 6px;">
+            <button id="billing-info-cancel" type="button"
+                    style="color: #d64113; background-color: #ffffff; box-shadow: none"
+            onclick="utopiasoftware[utopiasoftware_app_namespace].controller.billingInfoPageViewModel.
+            backButtonClicked();">
+                <ons-ripple></ons-ripple>
+                Cancel
+            </button>
+
+            <!-- button is disabled by default -->
+            <button id="billing-info-update" type="button" disabled
+                    style="color: #363E7C; background-color: #ffffff; box-shadow: none"
+                    onclick="utopiasoftware[utopiasoftware_app_namespace].controller.billingInfoPageViewModel.
+                    updateButtonClicked()">
+                <ons-ripple></ons-ripple>
+                Update
+            </button>
+        </div>
+
+    </ons-bottom-toolbar>
+
+</ons-page>

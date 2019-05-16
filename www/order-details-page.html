@@ -1,0 +1,265 @@
+<!-- order-details page -->
+<ons-page id="order-details-page">
+
+    <ons-toolbar style="color: #ffffff !important; background-color: #3f51b5 !important;
+    box-shadow: none !important; border-bottom: lightgray 1px solid"
+                 static modifier="noshadow">
+        <div class="left" style="color: #ffffff !important; background-color: #3f51b5 !important;">
+            <ons-toolbar-button style="color: #ffffff !important; background-color: #3f51b5 !important;"
+                 onclick="utopiasoftware[utopiasoftware_app_namespace].controller.orderDetailsPageViewModel.backButtonClicked();">
+                <ons-icon icon="md-long-arrow-left"></ons-icon>
+            </ons-toolbar-button>
+        </div>
+        <div class="center title-bar" style="color: #ffffff !important; background-color: #3f51b5 !important; text-align: center;">
+            Order Details
+        </div>
+
+        <div class="right" style="color: #ffffff !important; background-color: #3f51b5 !important;">
+            <!--<ons-toolbar-button style="background-color: #3f51b5 !important; color: #d70000 !important;"-->
+            <!--icon="md-favorite"></ons-toolbar-button>-->
+
+            <ons-toolbar-button onclick="utopiasoftware[utopiasoftware_app_namespace].controller.viewCartPageViewModel.viewCartPage()"
+                                style="color: #ffffff !important; background-color: #3f51b5 !important;">
+                <ons-icon icon="md-shopping-cart" style="position: relative;">
+                    <span class="cart-count e-badge e-badge-overlap
+                            e-badge-notification e-badge-circle e-badge-danger"
+                          style="font-size: 0.5em;">0</span>
+                </ons-icon>
+            </ons-toolbar-button>
+        </div>
+    </ons-toolbar>
+
+    <div class="content">
+        <!-- page pull hook -->
+        <ons-pull-hook id="order-details-page-pull-hook" threshold-height="120px" fixed-content style="text-align: center">
+            <ons-fab id="order-details-page-pull-hook-fab" modifier="mini" style="background-color: #ffffff; color: #ff0000;
+        box-shadow: none; border: 1px #ff0000 solid">
+                <ons-icon icon="md-long-arrow-down" size="24px" style="color: #363E7C"></ons-icon>
+            </ons-fab>
+        </ons-pull-hook>
+        <!-- page preloader -->
+        <ons-progress-bar class="page-preloader" indeterminate modifier="default-page-preloader"
+                          style="position: fixed; z-index: 2; width: 100%; display: block;"></ons-progress-bar>
+
+        <!-- page modal loader -->
+        <div class="modal" style="z-index: 2; background-color: transparent; display: table;">
+            <div class="modal__content">
+                <ons-progress-circular indeterminate modifier="pull-hook" style="transform: scale(1.5);"></ons-progress-circular>
+            </div>
+        </div>
+
+        <ons-list id="order-details-list" style="display: block">
+
+            <ons-list-item modifier="longdivider" lock-on-drag="true"
+                           onclick="">
+                <div class="center row" style="font-size: 1.1em;">
+                    <div class="col-xs-6" style="text-align: right">
+                        <span class="list-item__title" style="color: #3F51B5; padding-left:10px;">ORDER</span>
+                    </div>
+                    <div class="col-xs-6" style="text-align: left">
+                        <span class="list-item__title order-details-order-number"
+                              style="color: #3F51B5; padding-left:10px; word-wrap: break-word;"></span>
+                    </div>
+                </div>
+            </ons-list-item>
+
+            <ons-list-item modifier="longdivider" lock-on-drag="true"
+                           onclick="">
+                <div class="center row">
+                    <div class="col-xs-6" style="text-align: left">
+                        <span class="list-item__title" style="color: #000000; padding-left:10px;">Order Status</span>
+                    </div>
+                    <div class="col-xs-6" style="text-align: left">
+                        <span class="list-item__title order-details-order-status"
+                              style="color: #000000; padding-left:10px; word-wrap: break-word;
+                              text-transform: uppercase"></span>
+                    </div>
+                </div>
+            </ons-list-item>
+
+            <ons-list-item modifier="longdivider" lock-on-drag="true"
+                           onclick="">
+                <div class="center row">
+                    <div class="col-xs-6" style="text-align: left">
+                        <span class="list-item__title" style="color: #000000; padding-left:10px;">Order Date</span>
+                    </div>
+                    <div class="col-xs-6" style="text-align: left">
+                        <span class="list-item__title order-details-order-date"
+                              style="color: #000000; padding-left:10px; word-wrap: break-word;
+                              text-transform: capitalize"></span>
+                    </div>
+                </div>
+            </ons-list-item>
+
+            <ons-list-item modifier="longdivider" lock-on-drag="true"
+                           onclick="">
+                <div class="center row">
+                    <div class="col-xs-6" style="text-align: left">
+                        <span class="list-item__title" style="color: #000000; padding-left:10px;">Order Total</span>
+                    </div>
+                    <div class="col-xs-6" style="text-align: left">
+                        <span class="list-item__title order-details-order-total"
+                              style="color: #000000; padding-left:10px; word-wrap: break-word;
+                              text-transform: capitalize"></span>
+                    </div>
+                </div>
+            </ons-list-item>
+
+            <ons-list-item modifier="longdivider" lock-on-drag="true"
+                           onclick="">
+                <div class="center row">
+                    <div class="col-xs-6" style="text-align: left">
+                        <span class="list-item__title" style="color: #000000; padding-left:10px;">Payment Method</span>
+                    </div>
+                    <div class="col-xs-6" style="text-align: left">
+                        <span class="list-item__title order-details-payment-method"
+                              style="color: #000000; padding-left:10px; word-wrap: break-word;
+                              text-transform: capitalize"></span>
+                    </div>
+                </div>
+            </ons-list-item>
+
+            <ons-list-item modifier="longdivider" lock-on-drag="true"
+                           onclick="">
+                <div class="center row">
+                    <div class="col-xs-6" style="text-align: left">
+                        <span class="list-item__title" style="color: #000000; padding-left:10px;">Shipping Method</span>
+                    </div>
+                    <div class="col-xs-6" style="text-align: left">
+                        <span class="list-item__title order-details-shipping-method"
+                              style="color: #000000; padding-left:10px; word-wrap: break-word;
+                              text-transform: capitalize"></span>
+                    </div>
+                </div>
+            </ons-list-item>
+
+            <ons-list-item modifier="longdivider" lock-on-drag="true"
+                           onclick="">
+                <div class="center row">
+                    <div class="col-xs-6" style="text-align: left">
+                        <span class="list-item__title" style="color: #000000; padding-left:10px;">Shipping Cost</span>
+                    </div>
+                    <div class="col-xs-6" style="text-align: left">
+                        <span class="list-item__title order-details-shipping-cost"
+                              style="color: #000000; padding-left:10px; word-wrap: break-word;
+                              text-transform: capitalize"></span>
+                    </div>
+                </div>
+            </ons-list-item>
+
+            <ons-list-item modifier="nodivider" lock-on-drag="true" expandable
+                           onclick="">
+                <div class="center">
+                    <span class="list-item__title" style="color: #000000; padding-left:10px;">Shipping Updates</span>
+                </div>
+                <div class="expandable-content" style="white-space: normal;">
+                    <div class="row order-details-order-notes" style="font-size: 0.85em;
+                        font-weight: 300;">
+                        <div class="col-xs-6" style="text-align: right; padding-right: 5px;
+                            padding-top: 10px; padding-bottom: 10px;
+                            text-transform: lowercase; word-wrap: break-word"></div>
+                        <div class="col-xs-6" style="text-align: left; padding-left: 5px;
+                            padding-top: 10px; padding-bottom: 10px;
+                            text-transform: lowercase; word-wrap: break-word"></div>
+                    </div>
+                </div>
+            </ons-list-item>
+
+            <ons-list-item modifier="nodivider" lock-on-drag="true" expandable
+                           onclick="">
+                <div class="center">
+                    <span class="list-item__title" style="color: #000000; padding-left:10px;">Order Items</span>
+                </div>
+                <div class="expandable-content" style="white-space: normal;">
+                    <div class="row order-details-order-items" style="font-size: 0.85em;
+                        font-weight: 300;">
+                        <div class="col-xs-6" style="text-align: right; padding-right: 5px;
+                            padding-top: 10px; padding-bottom: 10px"></div>
+                        <div class="col-xs-2" style="text-align: left; padding-left: 5px;
+                            padding-top: 10px; padding-bottom: 10px"></div>
+                        <div class="col-xs-4" style="text-align: left; padding-left: 5px;
+                            padding-top: 10px; padding-bottom: 10px"></div>
+                    </div>
+                </div>
+            </ons-list-item>
+
+            <ons-list-item modifier="nodivider" lock-on-drag="true" expandable
+                           onclick="">
+                <div class="center">
+                    <span class="list-item__title" style="color: #000000; padding-left:10px;">Billing Details</span>
+                </div>
+                <div class="expandable-content" style="white-space: normal;">
+                    <div class="row order-details-billing-details" style="font-size: 0.85em;
+                        font-weight: 300;">
+                        <div class="col-xs-12" style="text-align: left; padding-right: 5px;
+                            padding-top: 10px; padding-bottom: 10px"></div>
+                        <div class="col-xs-12" style="text-align: left; padding-right: 5px;
+                            padding-top: 10px; padding-bottom: 10px"></div>
+                        <div class="col-xs-12" style="text-align: left; padding-right: 5px;
+                            padding-top: 10px; padding-bottom: 10px"></div>
+                        <div class="col-xs-12" style="text-align: left; padding-right: 5px;
+                            padding-top: 10px; padding-bottom: 10px"></div>
+                        <div class="col-xs-12" style="text-align: left; padding-right: 5px;
+                            padding-top: 10px; padding-bottom: 10px"></div>
+                        <div class="col-xs-12" style="text-align: left; padding-right: 5px;
+                            padding-top: 10px; padding-bottom: 10px"></div>
+                        <div class="col-xs-12" style="text-align: left; padding-right: 5px;
+                            padding-top: 10px; padding-bottom: 10px"></div>
+                        <div class="col-xs-12" style="text-align: left; padding-right: 5px;
+                            padding-top: 10px; padding-bottom: 10px"></div>
+                        <div class="col-xs-12" style="text-align: left; padding-right: 5px;
+                            padding-top: 10px; padding-bottom: 10px"></div>
+                        <div class="col-xs-12" style="text-align: left; padding-right: 5px;
+                            padding-top: 10px; padding-bottom: 10px"></div>
+                    </div>
+                </div>
+            </ons-list-item>
+
+            <ons-list-item modifier="nodivider" lock-on-drag="true" expandable
+                           onclick="">
+                <div class="center">
+                    <span class="list-item__title" style="color: #000000; padding-left:10px;">Shopping Details</span>
+                </div>
+                <div class="expandable-content" style="white-space: normal;">
+                    <div class="row order-details-shipping-details" style="font-size: 0.85em;
+                        font-weight: 300;">
+                        <div class="col-xs-12" style="text-align: left; padding-right: 5px;
+                            padding-top: 10px; padding-bottom: 10px"></div>
+                        <div class="col-xs-12" style="text-align: left; padding-right: 5px;
+                            padding-top: 10px; padding-bottom: 10px"></div>
+                        <div class="col-xs-12" style="text-align: left; padding-right: 5px;
+                            padding-top: 10px; padding-bottom: 10px"></div>
+                        <div class="col-xs-12" style="text-align: left; padding-right: 5px;
+                            padding-top: 10px; padding-bottom: 10px"></div>
+                        <div class="col-xs-12" style="text-align: left; padding-right: 5px;
+                            padding-top: 10px; padding-bottom: 10px"></div>
+                        <div class="col-xs-12" style="text-align: left; padding-right: 5px;
+                            padding-top: 10px; padding-bottom: 10px"></div>
+                        <div class="col-xs-12" style="text-align: left; padding-right: 5px;
+                            padding-top: 10px; padding-bottom: 10px"></div>
+                        <div class="col-xs-12" style="text-align: left; padding-right: 5px;
+                            padding-top: 10px; padding-bottom: 10px"></div>
+                    </div>
+                </div>
+            </ons-list-item>
+
+        </ons-list>
+
+    </div>
+
+
+    <ons-bottom-toolbar modifier="transparent" style="border-top: lightgray 1px solid">
+        <div style="text-align: center; width: 100%; margin-top: 6px;">
+            <!-- button is disabled by default -->
+            <button id="order-details-reorder" type="button" disabled
+                    style="color: #363E7C; background-color: #ffffff; box-shadow: none"
+                    onclick="utopiasoftware[utopiasoftware_app_namespace].controller.
+                    orderDetailsPageViewModel.reorderButtonClicked()">
+                <ons-ripple></ons-ripple>
+                Reorder
+            </button>
+        </div>
+
+    </ons-bottom-toolbar>
+
+</ons-page>

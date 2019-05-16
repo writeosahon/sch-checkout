@@ -1,0 +1,27 @@
+<!-- categories page -->
+<ons-page id="categories-page">
+
+    <!-- page pull hook -->
+    <ons-pull-hook id="categories-page-pull-hook" threshold-height="120px" fixed-content style="text-align: center">
+        <ons-fab id="categories-page-pull-hook-fab" modifier="mini" style="background-color: #ffffff; color: #ff0000;
+        box-shadow: none; border: 1px #ff0000 solid">
+            <ons-icon icon="md-long-arrow-down" size="24px" style="color: #363E7C"></ons-icon>
+        </ons-fab>
+    </ons-pull-hook>
+    <!-- page preloader -->
+    <ons-progress-bar class="page-preloader" indeterminate modifier="default-page-preloader"
+                      style="position: fixed; z-index: 2; width: 100%; display: block;"></ons-progress-bar>
+
+    <div class="row" id="categories-contents-container">
+
+    </div>
+
+    <ons-fab id="categories-page-scroll-top-fab" modifier="mini" position="bottom right"
+             style="background-color: #ffffff; color: #ff0000;
+        box-shadow: none; border: 1px #ff0000 solid"
+            onclick="utopiasoftware[utopiasoftware_app_namespace].
+                                            controller.categoriesPageViewModel.scrollPageToTop();">
+        <ons-icon icon="md-chevron-up" size="24px" style="color: #363E7C"></ons-icon>
+    </ons-fab>
+
+</ons-page>

@@ -1,0 +1,114 @@
+<!-- products page -->
+<ons-page id="products-page">
+    <!-- page pull hook -->
+    <ons-pull-hook id="products-page-pull-hook" threshold-height="120px" fixed-content style="text-align: center">
+        <ons-fab id="products-page-pull-hook-fab" modifier="mini" style="background-color: #ffffff; color: #ff0000;
+        box-shadow: none; border: 1px #ff0000 solid">
+            <ons-icon icon="md-long-arrow-down" size="24px" style="color: #363E7C"></ons-icon>
+        </ons-fab>
+    </ons-pull-hook>
+    <!-- page preloader -->
+    <ons-progress-bar class="page-preloader" indeterminate modifier="default-page-preloader"
+                      style="position: fixed; z-index: 2; width: 100%; display: block;"></ons-progress-bar>
+
+    <!--<ons-segment id="products-layout-segment" active-index="0"
+                 style="position: fixed; top: 5px; width: 90px; margin-left: calc(100vw - 85px); box-shadow: none; z-index: 2;">
+        <button><ons-icon icon="fa-th-large" fixed-width></ons-icon></button>
+        <button><ons-icon icon="md-view-stream" fixed-width></ons-icon></button>
+    </ons-segment>
+
+    <ons-list-title>Products</ons-list-title>-->
+
+    <div class="row"  id="products-contents-container">
+
+        <!--<div class="col-xs-4" style="border-right: 1px lightgray solid; border-bottom: 1px lightgray solid">
+            <div class="e-card">
+                <div class="e-card-image" style="min-height: 100px; background-image: url('css/app-images/1-12.jpg');">
+                </div>
+                <div class="e-card-header">
+                    <div class="e-card-header-caption"  style="padding-left: 3px; padding-right: 5px">
+                        <div class="e-card-sub-title" style="color: #000000; font-size: 14px; text-align: center; text-transform: capitalize">
+                            White mug
+                        </div>
+                        <div style="color: gold; font-size: 0.7em !important;">
+                            <ons-icon icon="md-star" fixed-width></ons-icon>
+                            <ons-icon icon="md-star" fixed-width></ons-icon>
+                            <ons-icon icon="md-star" fixed-width></ons-icon>
+                            <ons-icon icon="md-star" fixed-width></ons-icon>
+                            <ons-icon icon="md-star" fixed-width></ons-icon>
+                            <span style="display: inline-block; color: gray;">(5,000)</span>
+                        </div>
+                        <div class="e-card-sub-title" style="text-align: left;">&#x20a6;10.00</div>
+                        <div class="e-card-sub-title" style="text-align: left; text-decoration: line-through; visibility: hidden">&#x20a6;40.00</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-4" style="border-right: 1px lightgray solid; border-bottom: 1px lightgray solid">
+            <div class="e-card">
+                <div class="e-card-image" style="min-height: 100px; background-image: url('css/app-images/1-12.jpg');">
+                    <span class="e-badge e-badge-danger" style="background-color: transparent; color: #d64113;
+                    border: 1px #d64113 solid; font-size: 0.6em; float: right; clear: both;">
+                                    50% OFF
+                                </span>
+                </div>
+                <div class="e-card-header">
+                    <div class="e-card-header-caption"  style="padding-left: 3px; padding-right: 5px">
+                        <div class="e-card-sub-title" style="color: #000000; font-size: 14px; text-align: center; text-transform: capitalize">
+                            White mug
+                        </div>
+                        <div style="color: gold; font-size: 0.7em !important;">
+                            <ons-icon icon="md-star" fixed-width></ons-icon>
+                            <ons-icon icon="md-star" fixed-width></ons-icon>
+                            <ons-icon icon="md-star" fixed-width></ons-icon>
+                            <ons-icon icon="md-star" fixed-width></ons-icon>
+                            <ons-icon icon="md-star" fixed-width></ons-icon>
+                            <span style="display: inline-block; color: gray;">(5,000)</span>
+                        </div>
+                        <div class="e-card-sub-title" style="text-align: left;">&#x20a6;10.00</div>
+                        <div class="e-card-sub-title" style="text-align: left; text-decoration: line-through">&#x20a6;40.00</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-4" style="border-right: 1px lightgray solid; border-bottom: 1px lightgray solid">
+            <div class="e-card">
+                <div class="e-card-image" style="min-height: 100px; background-image: url('css/app-images/1-12.jpg');">
+                    <span class="e-badge e-badge-danger" style="background-color: transparent; color: #d64113;
+                    border: 1px #d64113 solid; font-size: 0.6em; float: right; clear: both;">
+                                    50% OFF
+                                </span>
+                </div>
+                <div class="e-card-header">
+                    <div class="e-card-header-caption"  style="padding-left: 3px; padding-right: 5px">
+                        <div class="e-card-sub-title" style="color: #000000; font-size: 14px; text-align: center; text-transform: capitalize">
+                            White mug
+                        </div>
+                        <div style="color: gold; font-size: 0.7em !important;">
+                            <ons-icon icon="md-star" fixed-width></ons-icon>
+                            <ons-icon icon="md-star" fixed-width></ons-icon>
+                            <ons-icon icon="md-star" fixed-width></ons-icon>
+                            <ons-icon icon="md-star" fixed-width></ons-icon>
+                            <ons-icon icon="md-star" fixed-width></ons-icon>
+                            <span style="display: inline-block; color: gray;">(5,000)</span>
+                        </div>
+                        <div class="e-card-sub-title" style="text-align: left;">&#x20a6;10.00</div>
+                        <div class="e-card-sub-title" style="text-align: left; text-decoration: line-through">&#x20a6;40.00</div>
+                    </div>
+                </div>
+            </div>
+        </div>-->
+
+    </div>
+
+    <ons-fab id="products-page-scroll-top-fab" modifier="mini" position="bottom right"
+             style="background-color: #ffffff; color: #ff0000;
+        box-shadow: none; border: 1px #ff0000 solid"
+             onclick="utopiasoftware[utopiasoftware_app_namespace].
+                                            controller.productsPageViewModel.scrollPageToTop();">
+        <ons-icon icon="md-chevron-up" size="24px" style="color: #363E7C"></ons-icon>
+    </ons-fab>
+
+</ons-page>
