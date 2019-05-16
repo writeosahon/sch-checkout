@@ -19,8 +19,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="470">
-              <caret line="115" column="16" lean-forward="true" selection-start-line="115" selection-start-column="16" selection-end-line="115" selection-end-column="16" />
+            <state relative-caret-position="79">
+              <caret line="55" column="21" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -220,7 +220,7 @@
       <option name="presentableId" value="Default" />
       <updated>1557921824642</updated>
       <workItem from="1557921826681" duration="4951000" />
-      <workItem from="1558015732978" duration="6750000" />
+      <workItem from="1558015732978" duration="7403000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1558018018729</created>
@@ -236,11 +236,25 @@
       <option name="project" value="LOCAL" />
       <updated>1558019296471</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="initial commit">
+      <created>1558023034122</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1558023034122</updated>
+    </task>
+    <task id="LOCAL-00004" summary="initial commit">
+      <created>1558023367693</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1558023367693</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11701000" />
+    <option name="totallyTimeSpent" value="12354000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="0" />
@@ -366,8 +380,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
-          <caret line="115" column="16" lean-forward="true" selection-start-line="115" selection-start-column="16" selection-end-line="115" selection-end-column="16" />
+        <state relative-caret-position="79">
+          <caret line="55" column="21" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
         </state>
       </provider>
     </entry>

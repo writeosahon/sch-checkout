@@ -51,9 +51,9 @@
         <variable name="WINDOW_NAVIGATION_BAR_COLOR" value="#363E7C"/>
     </plugin>-->
     <!-- the edit-config below is used to attach the styles obtained from cordova-plugin-android-window-background -->
-    <edit-config file="AndroidManifest.xml" target="/manifest/application/activity[@android:name='SchoolsCheckout']" mode="merge">
+    <!--<edit-config file="AndroidManifest.xml" target="/manifest/application/activity[@android:name='SchoolsCheckout']" mode="merge">
         <activity android:name="SchoolsCheckout" android:theme="@style/CordovaWindowBackgroundTheme"/>
-    </edit-config>
+    </edit-config>-->
 
     <plugin name="cordova-plugin-nativestorage" spec="2.3.2"/>
     <plugin name="cordova-plugin-x-socialsharing" spec="5.4.3"/>
@@ -75,7 +75,7 @@
         <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
     </edit-config>
 
-    <edit-config file="AndroidManifest.xml" target="/manifest/uses-permission/[@android:name='android.permission.WRITE_EXTERNAL_STORAGE']" mode="overwrite">
+    <edit-config file="AndroidManifest.xml" target="/manifest/uses-permission/[@android:name='android.permission.WRITE_EXTERNAL_STORAGE']" mode="merge">
         <uses-permission xmlns:tools="http://schemas.android.com/tools" android:name="android.permission.WRITE_EXTERNAL_STORAGE" tools:node="replace" />
     </edit-config>
 
