@@ -20,7 +20,7 @@
     <allow-intent href="fb:*"/>
 
     <access origin="*"/>
-    <preference name="phonegap-version" value="cli-8.0.0" />
+    <preference name="phonegap-version" value="cli-8.1.1" />
 
 
     <plugin name="cordova-plugin-statusbar" spec="2.4.2"/>
@@ -64,9 +64,9 @@
 
     <plugin name="cordova-plugin-whitelist" spec="1.3.3"/>
 
-    <config-file platform="android" target="AndroidManifest.xml" parent="/manifest">
+    <edit-config file="AndroidManifest.xml" target="/manifest/uses-permission" mode="merge">
         <uses-permission android:name="android.permission.INTERNET" />
-    </config-file>
+    </edit-config>
 
 
     <preference name="AndroidPersistentFileLocation" value="Internal" />
@@ -113,8 +113,8 @@
         <activity android:launchMode="singleTask" />
     </edit-config>
     <!-- used to change the background color of the small icon in ONE-SIGNAL push notification -->
-    <config-file platform="android" target="AndroidManifest.xml" parent="/manifest/application">
+    <edit-config file="AndroidManifest.xml" target="/manifest/application" mode="merge">
         <meta-data android:name="com.onesignal.NotificationAccentColor.DEFAULT" android:value="FF363E7C" />
-    </config-file>
+    </edit-config>
 
 </widget>
