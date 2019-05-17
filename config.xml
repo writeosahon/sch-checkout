@@ -50,6 +50,17 @@
         <variable name="WINDOW_BACKGROUND_COLOR" value="#ffffff"/>
         <variable name="WINDOW_NAVIGATION_BAR_COLOR" value="#363E7C"/>
     </plugin>
+    <edit-config file="res/values/strings.xml" target="/resources" mode="merge">
+        <color name="cordova_window_background">#ffffff</color>
+        <color name="cordova_navigation_bar">#ffffff</color>
+    </edit-config>
+
+    <edit-config file="res/values/styles.xml" target="/resources" mode="merge">
+        <style name="CordovaWindowBackgroundTheme" parent="@android:style/Theme.DeviceDefault.NoActionBar">
+            <item name="android:windowBackground">@color/cordova_window_background</item>
+            <item xmlns:tools="http://schemas.android.com/tools" name="android:navigationBarColor" tools:targetApi="21">@color/cordova_navigation_bar</item>
+        </style>
+    </edit-config>
     <!-- the edit-config below is used to attach the styles obtained from cordova-plugin-android-window-background -->
     <!--<edit-config file="AndroidManifest.xml" target="/manifest/application/activity[@android:name='SchoolsCheckout']" mode="merge">
         <activity android:name="SchoolsCheckout" android:theme="@style/CordovaWindowBackgroundTheme"/>
