@@ -46,10 +46,10 @@
     <plugin name="cordova-plugin-ionic-keyboard" spec="2.1.2"/>
     <plugin name="cordova-sqlite-evcore-extbuild-free" spec="0.9.7"/>
     <!--<plugin name="cordova-plugin-sqlite-2" spec="1.0.5"/>-->
-    <plugin name="cordova-plugin-android-window-background" spec="https://github.com/writeosahon/android-window-background.git#test-17-05-19">
+    <!--<plugin name="cordova-plugin-android-window-background" spec="https://github.com/writeosahon/android-window-background.git#test-17-05-19">
         <variable name="WINDOW_BACKGROUND_COLOR" value="#ffffff"/>
         <variable name="WINDOW_NAVIGATION_BAR_COLOR" value="#363E7C"/>
-    </plugin>
+    </plugin>-->
     <edit-config file="res/values/strings.xml" target="/resources" mode="merge">
         <color name="cordova_window_background">#ffffff</color>
         <color name="cordova_navigation_bar">#ffffff</color>
