@@ -12,7 +12,7 @@
  **/
 
 // constant that defines the app namespace
-const utopiasoftware_app_namespace = 'print_service_ecommerce';
+const utopiasoftware_app_namespace = 'schools-checkout';
 
 /**
  * create the namespace and base methods and properties for the app
@@ -26,15 +26,6 @@ const utopiasoftware = {
          */
         randomisationEngine: Random.engines.browserCrypto,
 
-        /**
-         * holds the app authorization Base64 encoded key
-         */
-        accessor: "ZGV2ZWxvcGVyQHNob3BvYWtleGNsdXNpdmUuY29tOk9ha0RldmVsb3BlckAx",
-
-        /**
-         * holds the paystack authorization Base64 encoded key. This key must be decoded before use
-         */
-        paystackAccessor: "c2tfdGVzdF83YzkxMThiMzlhZmYzNmNlMGRlYTMyMzMzOTMwMDk1NjhlNWMyMDRl",
 
         /**
          * object is responsible for handling database operations for the app

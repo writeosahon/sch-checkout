@@ -25,19 +25,6 @@ utopiasoftware[utopiasoftware_app_namespace].controller = {
                 // does nothing for now!!
             });
 
-            // disable the default back button handler for the 'search-page-search-input-popover'
-            $('#search-page-search-input-popover').get(0).onDeviceBackButton.disable();
-
-            // set the device back button handler for the 'third-party-login-modal' modal AND the close button
-            $('#third-party-login-modal').get(0).onDeviceBackButton =
-            $('#third-party-login-modal #third-party-login-modal-close-button').get(0).onclick = async function(){
-                // close the modal
-                await $('#third-party-login-modal').get(0).hide();
-
-                // reset the Firebase UI object
-                utopiasoftware[utopiasoftware_app_namespace].model.firebaseUI.reset();
-            };
-
             // displaying prepping message
             $('#loader-modal-message').html("Loading App...");
             $('#loader-modal').get(0).show(); // show loader
@@ -90,21 +77,6 @@ utopiasoftware[utopiasoftware_app_namespace].controller = {
                 iconPosition: "Left"
             }).appendTo('#cancel-order-no');
 
-
-            //initialise the firebase app.
-            utopiasoftware[utopiasoftware_app_namespace].model.firebaseApp =
-                firebase.initializeApp({
-                    apiKey: "AIzaSyAx5tpRlU79yPXiNWFhxyNfAbCtuoIddIA",
-                    authDomain: "oak-exclusive.firebaseapp.com",
-                    databaseURL: "https://oak-exclusive.firebaseio.com",
-                    projectId: "oak-exclusive",
-                    storageBucket: "oak-exclusive.appspot.com",
-                    messagingSenderId: "492676682141"
-                });
-
-            // initialise the firebase ui app
-            utopiasoftware[utopiasoftware_app_namespace].model.firebaseUI =
-            new firebaseui.auth.AuthUI(utopiasoftware[utopiasoftware_app_namespace].model.firebaseApp.auth());
 
             // START ALL CORDOVA PLUGINS CONFIGURATIONS
             try{

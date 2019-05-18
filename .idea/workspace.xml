@@ -2,8 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="310c6879-635e-49c1-a73a-51b9f2cd6c6d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/js/compiled-js/base-compiled.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/js/compiled-js/base-compiled.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/js/compiled-js/base-compiled.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/js/compiled-js/base-compiled.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/js/compiled-js/base.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/js/compiled-js/base.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/js/compiled-js/controller-compiled.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/js/compiled-js/controller-compiled.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/js/compiled-js/controller-compiled.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/js/compiled-js/controller-compiled.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/js/compiled-js/controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/js/compiled-js/controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/js/compiled-js/model-compiled.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/js/compiled-js/model-compiled.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/js/compiled-js/model-compiled.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/js/compiled-js/model-compiled.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/js/compiled-js/model.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/js/compiled-js/model.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,11 +26,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="538">
-              <caret line="62" column="9" lean-forward="true" selection-start-line="62" selection-start-column="9" selection-end-line="62" selection-end-column="9" />
+            <state relative-caret-position="436">
+              <caret line="56" selection-start-line="56" selection-end-line="56" />
             </state>
           </provider>
         </entry>
@@ -28,17 +38,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2329">
+            <state relative-caret-position="569">
               <caret line="137" column="27" selection-start-line="137" selection-start-column="27" selection-end-line="137" selection-end-column="27" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/js/compiled-js/controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
-              <caret line="69" column="35" lean-forward="true" selection-start-line="69" selection-start-column="35" selection-end-line="69" selection-end-column="35" />
+            <state relative-caret-position="280">
+              <caret line="78" column="12" selection-start-line="78" selection-start-column="12" selection-end-line="78" selection-end-column="12" />
               <folding>
                 <element signature="n#style#0;n#ons-icon#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#ons-icon#0;n#!!top" expanded="true" />
@@ -116,7 +126,30 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/js/compiled-js/model.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="484">
+              <caret line="41" selection-start-line="41" selection-end-line="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/js/compiled-js/base.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="79" column="8" selection-start-line="79" selection-start-column="8" selection-end-line="79" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>access</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -131,8 +164,15 @@
       <list>
         <option value="$PROJECT_DIR$/www/index.html" />
         <option value="$PROJECT_DIR$/config.xml" />
+        <option value="$PROJECT_DIR$/www/js/compiled-js/base.js" />
+        <option value="$PROJECT_DIR$/www/js/compiled-js/model.js" />
+        <option value="$PROJECT_DIR$/www/js/compiled-js/controller.js" />
       </list>
     </option>
+  </component>
+  <component name="NamedScopeManager">
+    <scope name="app-custom" pattern="file:www/js/compiled-js/base.js||file:www/js/compiled-js/controller.js||file:www/js/compiled-js/model.js" />
+    <scope name="app-css-compressor" pattern="file:www/css/app-custom-styles.css" />
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
@@ -171,6 +211,22 @@
               <item name="js" type="462c0819:PsiDirectoryNode" />
               <item name="compiled-js" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Schools Checkout" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Schools Checkout" type="462c0819:PsiDirectoryNode" />
+              <item name="www" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="compiled-js" type="462c0819:PsiDirectoryNode" />
+              <item name="base.js" type="620a8d5e:NestingTreeNode" />
+            </path>
+            <path>
+              <item name="Schools Checkout" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Schools Checkout" type="462c0819:PsiDirectoryNode" />
+              <item name="www" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="compiled-js" type="462c0819:PsiDirectoryNode" />
+              <item name="controller.js" type="620a8d5e:NestingTreeNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -181,7 +237,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/watchers.xml" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -190,7 +246,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -220,7 +276,8 @@
       <option name="presentableId" value="Default" />
       <updated>1557921824642</updated>
       <workItem from="1557921826681" duration="4951000" />
-      <workItem from="1558015732978" duration="15977000" />
+      <workItem from="1558015732978" duration="16650000" />
+      <workItem from="1558182967141" duration="3271000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1558018018729</created>
@@ -313,11 +370,18 @@
       <option name="project" value="LOCAL" />
       <updated>1558104115829</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="initial commit">
+      <created>1558104223840</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1558104223840</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20928000" />
+    <option name="totallyTimeSpent" value="24872000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="0" />
@@ -354,17 +418,38 @@
     <entry file="file://$PROJECT_DIR$/.babelrc">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="56" selection-start-line="56" selection-end-line="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/compiled-js/base.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="79" column="8" selection-start-line="79" selection-start-column="8" selection-end-line="79" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2329">
+        <state relative-caret-position="569">
           <caret line="137" column="27" selection-start-line="137" selection-start-column="27" selection-end-line="137" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/compiled-js/model.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/js/compiled-js/controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="69" column="35" lean-forward="true" selection-start-line="69" selection-start-column="35" selection-end-line="69" selection-end-column="35" />
+        <state relative-caret-position="280">
+          <caret line="78" column="12" selection-start-line="78" selection-start-column="12" selection-end-line="78" selection-end-column="12" />
           <folding>
             <element signature="n#style#0;n#ons-icon#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#ons-icon#0;n#!!top" expanded="true" />
@@ -441,12 +526,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="538">
-          <caret line="62" column="9" lean-forward="true" selection-start-line="62" selection-start-column="9" selection-end-line="62" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <last-edited>app-css-compressor</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+          <order>
+            <scope name="app-custom" />
+            <scope name="app-css-compressor" />
+          </order>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
