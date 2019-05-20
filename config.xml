@@ -48,7 +48,7 @@
     <!--<plugin name="cordova-plugin-sqlite-2" spec="1.0.5"/>-->
     <plugin name="cordova-plugin-android-window-background" spec="https://github.com/writeosahon/android-window-background.git#oak-printing-ecommerce-background">
         <variable name="WINDOW_BACKGROUND_COLOR" value="#ffffff"/>
-        <variable name="WINDOW_NAVIGATION_BAR_COLOR" value="#363E7C"/>
+        <variable name="WINDOW_NAVIGATION_BAR_COLOR" value="#CB1451"/>
     </plugin>
     <!-- the edit-config below is used to attach the styles obtained from cordova-plugin-android-window-background -->
     <edit-config file="AndroidManifest.xml" target="/manifest/application/activity[@android:name='SchoolsCheckout']" mode="merge">
@@ -89,9 +89,9 @@
         <!-- below requires the splash screen plugin -->
         <!-- docs: https://github.com/apache/cordova-plugin-splashscreen -->
         <preference name="SplashMaintainAspectRatio" value="true"/>
-        <preference name="SplashScreenSpinnerColor" value="#363E7C" />
+        <preference name="SplashScreenSpinnerColor" value="#e3165b" />
         <!-- set the color of the app header using the added headerColor plugin -->
-        <preference name="HeaderColor" value="#363E7C" />
+        <preference name="HeaderColor" value="#CB1451" />
         <!-- set the load url timeout for the app -->
         <preference name="loadUrlTimeoutValue" value="240000" />
     </platform>
