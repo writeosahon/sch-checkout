@@ -1,43 +1,5 @@
 <!-- home page -->
 <ons-page id="home-page">
-    <!-- page pull hook -->
-    <ons-pull-hook id="home-page-pull-hook" threshold-height="120px" fixed-content style="text-align: center">
-        <ons-fab id="home-page-pull-hook-fab" modifier="mini" style="background-color: #ffffff; color: #ff0000;
-        box-shadow: none; border: 1px #ff0000 solid">
-            <ons-icon icon="md-long-arrow-down" size="24px" style="color: #363E7C"></ons-icon>
-        </ons-fab>
-    </ons-pull-hook>
-    <!-- page preloader -->
-    <ons-progress-bar class="page-preloader" indeterminate modifier="default-page-preloader"
-                      style="position: fixed; z-index: 2; width: 100%; display: block;"></ons-progress-bar>
 
-    <div id="home-latest-design-block" style="width: 100%; margin-left: -1px; margin-right: -1px; margin-top: -14px; padding-left: 0; padding-right: 0;
-    opacity: 1;">
-
-        <div class="row" style="margin-top: 0em;">
-        </div>
-    </div>
-
-    <div id="home-featured-design-block" style="width: 100%; height: 40vh; margin-top: 1em; margin-left: 0px;
-       padding-left: 0; padding-right: 0; opacity: 0; border-bottom: lightgray 1px solid; text-align: center;">
-        <span class="e-badge e-badge-info e-badge-pill" style="background-color: transparent; color: black;
-        font-size: 1em; margin-left: 0.5em; margin-top: 0.2em;"
-              onclick="utopiasoftware[utopiasoftware_app_namespace].controller.homePageViewModel.showMoreFeaturedProducts();">
-            POPULAR PRODUCTS <ons-icon icon="md-caret-right"></ons-icon> </span>
-
-        <div class="row" style="margin-top: 0.5em;">
-        </div>
-    </div>
-
-    <div id="home-sales-design-block" style="width: 100%; height: 40vh; margin-top: 1em; margin-left: -1px; padding-left: 0;
-    padding-right: 0; opacity: 0; text-align: center">
-        <span class="e-badge e-badge-danger e-badge-pill" style="background-color: transparent; color: black;
-        font-size: 1em; margin-left: 0.5em; margin-top: 0.2em; text-align: center"
-              onclick="utopiasoftware[utopiasoftware_app_namespace].controller.homePageViewModel.showMoreSalesProducts();">
-            DEALS & SALES <ons-icon icon="md-caret-right"></ons-icon> </span>
-
-        <div class="row" style="margin-top: 0.5em;">
-        </div>
-    </div>
 
 </ons-page>

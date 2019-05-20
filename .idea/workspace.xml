@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="310c6879-635e-49c1-a73a-51b9f2cd6c6d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/www/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/js/compiled-js/controller-compiled.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/js/compiled-js/controller-compiled.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/js/compiled-js/controller-compiled.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/js/compiled-js/controller-compiled.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/js/compiled-js/controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/js/compiled-js/controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/home-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/www/home-page.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -28,7 +25,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="382">
@@ -37,11 +34,20 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/www/home-page.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/js/compiled-js/controller.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="465">
-              <caret line="159" column="6" lean-forward="true" selection-start-line="159" selection-start-column="6" selection-end-line="159" selection-end-column="6" />
+              <caret line="159" column="6" selection-start-line="159" selection-start-column="6" selection-end-line="159" selection-end-column="6" />
               <folding>
                 <element signature="n#style#0;n#ons-icon#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#ons-icon#0;n#!!top" expanded="true" />
@@ -160,6 +166,7 @@
         <option value="$PROJECT_DIR$/www/js/compiled-js/model.js" />
         <option value="$PROJECT_DIR$/www/js/compiled-js/controller.js" />
         <option value="$PROJECT_DIR$/www/index.html" />
+        <option value="$PROJECT_DIR$/www/home-page.html" />
       </list>
     </option>
   </component>
@@ -190,6 +197,12 @@
               <item name="Schools Checkout" type="b2602c69:ProjectViewProjectNode" />
               <item name="Schools Checkout" type="462c0819:PsiDirectoryNode" />
               <item name="www" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Schools Checkout" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Schools Checkout" type="462c0819:PsiDirectoryNode" />
+              <item name="www" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Schools Checkout" type="b2602c69:ProjectViewProjectNode" />
@@ -270,7 +283,7 @@
       <updated>1557921824642</updated>
       <workItem from="1557921826681" duration="4951000" />
       <workItem from="1558015732978" duration="16650000" />
-      <workItem from="1558182967141" duration="4518000" />
+      <workItem from="1558182967141" duration="4769000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1558018018729</created>
@@ -384,11 +397,18 @@
       <option name="project" value="LOCAL" />
       <updated>1558189801141</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="initial commit">
+      <created>1558341114660</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1558341114660</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26119000" />
+    <option name="totallyTimeSpent" value="26370000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="0" />
@@ -449,7 +469,7 @@
     <entry file="file://$PROJECT_DIR$/www/js/compiled-js/controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
-          <caret line="159" column="6" lean-forward="true" selection-start-line="159" selection-start-column="6" selection-end-line="159" selection-end-column="6" />
+          <caret line="159" column="6" selection-start-line="159" selection-start-column="6" selection-end-line="159" selection-end-column="6" />
           <folding>
             <element signature="n#style#0;n#ons-icon#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#ons-icon#0;n#!!top" expanded="true" />
@@ -526,10 +546,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/www/css/ej2-material.16.3.33.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="542">
+          <caret line="188" column="8" lean-forward="true" selection-start-line="188" selection-start-column="8" selection-end-line="188" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="382">
           <caret line="126" column="53" selection-start-line="126" selection-start-column="53" selection-end-line="126" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/home-page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
         </state>
       </provider>
     </entry>
