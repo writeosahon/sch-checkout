@@ -1,4 +1,10 @@
 
+/** style for custom fonts **/
+@font-face {
+    font-family: 'Stylish Font';
+    src: url("custom-font/Stylish-Regular.ttf") format("truetype");
+}
+
 /** STYLE FOR PARSLEY VALIDATION LIBRARY **/
 .parsley-errors-list {
     display: none !important;
@@ -61,10 +67,10 @@
     min-width: 90vw;
 }
 .alert-dialog-title--utopiasoftware-oak-alert-dialog {
-    color: #3F51B5;
+    color: #e3165b;
 }
 .alert-dialog-button--utopiasoftware-oak-alert-dialog {
-    color: #3F51B5;
+    color: #e3165b;
 }
 /** STYLE FOR THE APP ALERT DIALOG ENDS **/
 

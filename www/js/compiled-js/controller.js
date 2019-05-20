@@ -145,7 +145,7 @@ utopiasoftware[utopiasoftware_app_namespace].controller = {
                 $('ons-splitter').get(0).content.load("app-main-template");
 
                 // set status bar color
-                StatusBar.backgroundColorByHexString("#363E7C");
+                StatusBar.backgroundColorByHexString("#CB1451");
                 navigator.splashscreen.hide(); // hide the splashscreen
                 utopiasoftware[utopiasoftware_app_namespace].model.isAppReady = true; // flag that app is fully loaded and ready
             }
