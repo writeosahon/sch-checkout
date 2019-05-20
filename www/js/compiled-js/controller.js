@@ -85,32 +85,11 @@ utopiasoftware[utopiasoftware_app_namespace].controller = {
             }
             catch(err){}
 
-            // initialise the one-signal push notification plugin
-            window.plugins.OneSignal
-                .startInit("e388205d-c66d-4012-a422-68572fddcfd7")
-                .handleNotificationReceived(function(jsonData) {
-                    // do nothing for now
-                })
-                .handleNotificationOpened(function(jsonData) {
-                    // do nothing for now
-                })
-                .inFocusDisplaying(window.plugins.OneSignal.OSInFocusDisplayOption.Notification)
-                .endInit();
-
-            // add listener for when the user's push notification settings change
-            window.plugins.OneSignal.addSubscriptionObserver(function (state) {
-                // check if the push notification preference switch has been created
-                if ($('#account-page #account-push-notification-preference').get(0)) { // the preference switch exist
-                    // update the state of the push notification preference switch user the user's push notification subscription
-                    $('#account-page #account-push-notification-preference').get(0).checked = state.to.subscribed;
-                }
-            });
-
 
             try { // START ALL THE CORDOVA PLUGINS CONFIGURATION WHICH REQUIRE PROMISE SYNTAX
 
                 // create the pouchdb app database
-                utopiasoftware[utopiasoftware_app_namespace].model.appDatabase = new PouchDB('PrintServiceEcommerce.db', {
+                utopiasoftware[utopiasoftware_app_namespace].model.appDatabase = new PouchDB('SchoolsCheckout.db', {
                     adapter: 'cordova-sqlite',
                     location: 'default',
                     androidDatabaseImplementation: 2
@@ -118,7 +97,7 @@ utopiasoftware[utopiasoftware_app_namespace].controller = {
 
                 // create the encrypted pouchdb app database
                 utopiasoftware[utopiasoftware_app_namespace].model.encryptedAppDatabase =
-                    new PouchDB('PrintServiceEcommerceEncrypted.db', {
+                    new PouchDB('SchoolsCheckoutEncrypted.db', {
                     adapter: 'cordova-sqlite',
                     location: 'default',
                     androidDatabaseImplementation: 2
@@ -129,13 +108,13 @@ utopiasoftware[utopiasoftware_app_namespace].controller = {
                 try {
                     // get secure key, if it exists
                     secureKey = await new Promise(function(resolve, reject){
-                        NativeStorage.getItem("utopiasoftware-oak-print-service-secure-key",resolve, reject);
+                        NativeStorage.getItem("utopiasoftware-schools-checkout-secure-key",resolve, reject);
                     });
                 }
                 catch(err){ // secure key does not exist
                     // create the secure key
                     secureKey = await new Promise(function(resolve, reject){
-                        NativeStorage.setItem("utopiasoftware-oak-print-service-secure-key",
+                        NativeStorage.setItem("utopiasoftware-schools-checkout-secure-key",
                             {password: Random.uuid4(utopiasoftware[utopiasoftware_app_namespace].randomisationEngine)},
                             resolve, reject);
                     });
@@ -155,24 +134,6 @@ utopiasoftware[utopiasoftware_app_namespace].controller = {
                         }});
                 });
 
-                // load/set the initial number of items in the user's cart
-                try{
-                    utopiasoftware[utopiasoftware_app_namespace].model.cartCount =
-                        (await utopiasoftware[utopiasoftware_app_namespace].databaseOperations.loadData("user-cart",
-                        utopiasoftware[utopiasoftware_app_namespace].model.appDatabase)).cart.length;
-                }
-                catch(err){}
-
-                //register the listener for app database changes
-                utopiasoftware[utopiasoftware_app_namespace].controller.appDatabaseChangesListenerViewModel.
-                    changesEventEmitter = utopiasoftware[utopiasoftware_app_namespace].model.appDatabase.
-                                                changes({
-                    live: true,
-                    include_docs: true,
-                    since: 'now',
-                    doc_ids: ['user-cart']
-                }).on("change", utopiasoftware[utopiasoftware_app_namespace].controller.
-                    appDatabaseChangesListenerViewModel.userCartChanged);
 
             }
             catch(err){
@@ -180,15 +141,8 @@ utopiasoftware[utopiasoftware_app_namespace].controller = {
             }
             finally{
 
-                // load the initial content of the app
-                if(true){ // there is a previous logged in user
-                    // load the app main page
-                    $('ons-splitter').get(0).content.load("app-main-template");
-                }
-                else{ // there is no previously logged in user
-                    // load the login page
-                    $('ons-splitter').get(0).content.load("login-template");
-                }
+                // load the app main page
+                $('ons-splitter').get(0).content.load("app-main-template");
 
                 // set status bar color
                 StatusBar.backgroundColorByHexString("#363E7C");
@@ -198,43 +152,6 @@ utopiasoftware[utopiasoftware_app_namespace].controller = {
 
         }); // end of ons.ready()
 
-    },
-
-    /**
-     * this view-model is used to house the listeners and data/properties which listen for
-     * changes in the app database
-     */
-    appDatabaseChangesListenerViewModel : {
-
-        /**
-         * property holds the Event Emitter object for the changes taking
-         * place in the database. This object can be used to cancel event listening at
-         * any time
-         */
-        changesEventEmitter: null,
-
-        /**
-         * methosd is used to listen for changes to the
-         * user-cart document i.e. when the local cached user cart is updated/modified
-         *
-         * @param changesInfo {Object} holds the object containing the changes made to the user cart
-         *
-         * @returns {Promise<void>}
-         */
-        async userCartChanged(changesInfo){
-            if(changesInfo.deleted === true){ // the user local cart was deleted
-                // reset the cartCount app model property to zero
-                utopiasoftware[utopiasoftware_app_namespace].model.cartCount = 0;
-            }
-            else{ // the user local cart was modified/updated
-                // update the cartCount app model property to indicate the number of items in cart (using the updated cart length)
-                utopiasoftware[utopiasoftware_app_namespace].model.cartCount =
-                    changesInfo.doc.cart.length;
-            }
-
-            // update the cart count being displayed on all current pages
-            $('.cart-count').html(utopiasoftware[utopiasoftware_app_namespace].model.cartCount);
-        }
     },
 
     /**
