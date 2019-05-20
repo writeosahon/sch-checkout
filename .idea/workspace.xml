@@ -1,16 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="310c6879-635e-49c1-a73a-51b9f2cd6c6d" name="Default Changelist" comment="initial commit">
-      <change afterPath="$PROJECT_DIR$/www/css/custom-font/Stylish-Regular.ttf" afterDir="false" />
+    <list default="true" id="310c6879-635e-49c1-a73a-51b9f2cd6c6d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/css/app-custom-styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/css/app-custom-styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/css/app-custom-styles.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/css/app-custom-styles.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/home-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/www/home-page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/www/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/js/compiled-js/controller-compiled.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/js/compiled-js/controller-compiled.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/js/compiled-js/controller-compiled.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/js/compiled-js/controller-compiled.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/js/compiled-js/controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/js/compiled-js/controller.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -325,7 +317,7 @@
       <updated>1557921824642</updated>
       <workItem from="1557921826681" duration="4951000" />
       <workItem from="1558015732978" duration="16650000" />
-      <workItem from="1558182967141" duration="10779000" />
+      <workItem from="1558182967141" duration="11026000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1558018018729</created>
@@ -460,11 +452,18 @@
       <option name="project" value="LOCAL" />
       <updated>1558353697251</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="initial commit">
+      <created>1558359659073</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1558359659073</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32380000" />
+    <option name="totallyTimeSpent" value="32627000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="0" />
