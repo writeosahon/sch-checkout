@@ -5,7 +5,7 @@
                  static modifier="noshadow transparent">
 
         <div class="center"
-             style="font-family: 'Stylish Font'; font-size: 1.1em; color: #e3165b !important; text-align: center">
+             style="font-family: 'Stylish Font'; font-size: 1.5em; color: #e3165b !important; text-align: center">
             Schools Checkout
         </div>
 
@@ -18,7 +18,11 @@
     <ons-carousel id="home-carousel" fullscreen direction="horizontal" auto-scroll auto-scroll-ratio="0.1"
                   item-width="100%" initial-index="0" animation="none">
         <ons-carousel-item id="home-carousel-item">
-            <div style="width: 100%; height: 100%; background-color: blue;"></div>
+            <div class="modal" style="z-index: 2; background-color: red;">
+                <div class="modal__content">
+                    <div style="width: 35%; height: 35%; background-color: black"></div>
+                </div>
+            </div>
         </ons-carousel-item>
 
     </ons-carousel>
