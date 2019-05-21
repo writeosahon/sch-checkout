@@ -5,7 +5,7 @@
                  static modifier="noshadow transparent">
 
         <div class="center"
-             style="font-family: 'Stylish Font'; color: #e3165b !important; text-align: center">
+             style="font-family: 'Stylish Font'; font-size: 1.1em; color: #e3165b !important; text-align: center">
             Schools Checkout
         </div>
 
@@ -13,5 +13,14 @@
 
         </div>
     </ons-toolbar>
+
+    <!-- create the carousel container for the home page -->
+    <ons-carousel id="home-carousel" fullscreen direction="horizontal" auto-scroll auto-scroll-ratio="0.1"
+                  item-width="100%" initial-index="0" animation="none">
+        <ons-carousel-item id="home-carousel-item">
+            <div style="width: 100%; height: 100%; background-color: blue;"></div>
+        </ons-carousel-item>
+
+    </ons-carousel>
 
 </ons-page>
