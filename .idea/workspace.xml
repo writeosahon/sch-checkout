@@ -70,15 +70,14 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/home-page.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" column="49" selection-start-line="29" selection-start-column="49" selection-end-line="29" selection-end-column="49" />
+            <state relative-caret-position="459">
+              <caret line="27" column="77" lean-forward="true" selection-start-line="27" selection-start-column="77" selection-end-line="27" selection-end-column="77" />
               <folding>
                 <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#ons-toolbar#0;n#ons-page#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#ons-carousel-item#0;n#ons-carousel#0;n#ons-page#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ons-button#0;n#div#0;n#div#0;n#ons-carousel-item#0;n#ons-carousel#0;n#ons-page#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ons-button#1;n#div#0;n#div#0;n#ons-carousel-item#0;n#ons-carousel#0;n#ons-page#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ons-card#0;n#div#0;n#div#0;n#ons-carousel-item#0;n#ons-carousel#0;n#ons-page#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -274,7 +273,7 @@
       <workItem from="1558015732978" duration="16650000" />
       <workItem from="1558182967141" duration="11026000" />
       <workItem from="1558360680079" duration="809000" />
-      <workItem from="1558451737631" duration="5699000" />
+      <workItem from="1558451737631" duration="7992000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1558018018729</created>
@@ -451,11 +450,32 @@
       <option name="project" value="LOCAL" />
       <updated>1558468602911</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="initial commit">
+      <created>1558469694409</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1558469694409</updated>
+    </task>
+    <task id="LOCAL-00027" summary="initial commit">
+      <created>1558470284603</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1558470284603</updated>
+    </task>
+    <task id="LOCAL-00028" summary="initial commit">
+      <created>1558470401588</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1558470401588</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39135000" />
+    <option name="totallyTimeSpent" value="41428000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="0" />
@@ -570,15 +590,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/www/home-page.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="49" selection-start-line="29" selection-start-column="49" selection-end-line="29" selection-end-column="49" />
+        <state relative-caret-position="459">
+          <caret line="27" column="77" lean-forward="true" selection-start-line="27" selection-start-column="77" selection-end-line="27" selection-end-column="77" />
           <folding>
             <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#ons-toolbar#0;n#ons-page#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#ons-carousel-item#0;n#ons-carousel#0;n#ons-page#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-button#0;n#div#0;n#div#0;n#ons-carousel-item#0;n#ons-carousel#0;n#ons-page#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-button#1;n#div#0;n#div#0;n#ons-carousel-item#0;n#ons-carousel#0;n#ons-page#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-card#0;n#div#0;n#div#0;n#ons-carousel-item#0;n#ons-carousel#0;n#ons-page#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
