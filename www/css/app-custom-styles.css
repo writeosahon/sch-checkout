@@ -282,7 +282,7 @@
     background-size: cover;
     background-origin: content-box;
     background-repeat: no-repeat;
-    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.3) 100%),
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.7) 100%),
     url("app-images/registration-background.jpg");
 }
 #home-page #home-latest-design-block {
