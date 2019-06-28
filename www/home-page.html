@@ -1,11 +1,12 @@
 <!-- home page -->
 <ons-page id="home-page">
 
-    <ons-toolbar style="background-color: transparent !important;" static>
+    <ons-toolbar style="background-color: transparent !important; box-shadow: none !important;"
+                 static modifier="transparent noshadow">
 
         <div class="center"
              style="font-family: 'Stylish Font'; font-size: 1.5em; color: #e3165b !important; text-align: center">
-            Schools Checkout
+            Registration
         </div>
 
         <div class="right" style="min-width: 20px !important;">
@@ -15,21 +16,10 @@
 
     <!-- create the carousel container for the home page -->
     <ons-carousel id="home-carousel" fullscreen direction="horizontal" auto-scroll auto-scroll-ratio="0.1"
-                  item-width="100%" initial-index="0" animation="none">
-        <ons-carousel-item id="home-carousel-item">
-            <div class="modal" style="z-index: 2; background-color: transparent;">
-                <div class="modal__content">
-                    <ons-card style="display: inline-block; width: 35vw; height: 35vw; background-color: #e3165b;
-                    margin-left: 10vw; margin-right: 4vw;">
-                        <ons-ripple></ons-ripple>
-                        Scan To Checkout
-                    </ons-card>
+                  item-width="100%" initial-index="0" animation="none" style="background-color: transparent">
+        <ons-carousel-item id="home-carousel-item" style="background-color: transparent">
+            <div >
 
-                    <ons-card style="display: inline-block; width: 35vw; height: 35vw; background-color: #e3165b;
-                    margin-left: 4vw; margin-right: 10vw;">
-                        <ons-ripple></ons-ripple>
-                        Search To Checkout</ons-card>
-                </div>
             </div>
         </ons-carousel-item>
 

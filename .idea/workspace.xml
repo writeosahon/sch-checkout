@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="310c6879-635e-49c1-a73a-51b9f2cd6c6d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/www/css/app-images/registration-background.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/css/app-custom-styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/css/app-custom-styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/css/app-custom-styles.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/css/app-custom-styles.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/www/home-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/www/home-page.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -25,11 +28,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/css/app-custom-styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="100" column="31" selection-start-line="100" selection-start-column="25" selection-end-line="100" selection-end-column="31" />
+            <state relative-caret-position="241">
+              <caret line="281" column="27" selection-start-line="281" selection-start-column="27" selection-end-line="281" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -37,7 +40,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/product-details-page.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
+            <state relative-caret-position="731">
               <caret line="45" column="10" selection-start-line="45" selection-start-column="10" selection-end-line="45" selection-end-column="10" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#ons-page#0;n#!!top" expanded="true" />
@@ -50,7 +53,7 @@
         <entry file="file://$PROJECT_DIR$/www/login-page.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
-              <caret line="3" column="41" lean-forward="true" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
+              <caret line="3" column="41" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -58,7 +61,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="569">
+            <state relative-caret-position="2244">
               <caret line="132" column="77" selection-start-line="132" selection-start-column="77" selection-end-line="132" selection-end-column="77" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#ons-modal#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -67,17 +70,17 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/home-page.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="77" lean-forward="true" selection-start-line="27" selection-start-column="77" selection-end-line="27" selection-end-column="77" />
+            <state relative-caret-position="340">
+              <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
               <folding>
                 <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#ons-toolbar#0;n#ons-page#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#ons-carousel-item#0;n#ons-carousel#0;n#ons-page#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ons-card#0;n#div#0;n#div#0;n#ons-carousel-item#0;n#ons-carousel#0;n#ons-page#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ons-carousel#0;n#ons-page#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#ons-page#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -133,7 +136,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="cli-8.1.1-compat" />
+        <entry key="$PROJECT_DIR$" value="initial-setup" />
       </map>
     </option>
   </component>
@@ -145,8 +148,8 @@
         <option value="$PROJECT_DIR$/config.xml" />
         <option value="$PROJECT_DIR$/www/js/compiled-js/controller.js" />
         <option value="$PROJECT_DIR$/www/index.html" />
-        <option value="$PROJECT_DIR$/www/css/app-custom-styles.css" />
         <option value="$PROJECT_DIR$/www/home-page.html" />
+        <option value="$PROJECT_DIR$/www/css/app-custom-styles.css" />
       </list>
     </option>
   </component>
@@ -183,6 +186,13 @@
               <item name="Schools Checkout" type="462c0819:PsiDirectoryNode" />
               <item name="www" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Schools Checkout" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Schools Checkout" type="462c0819:PsiDirectoryNode" />
+              <item name="www" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="app-images" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Schools Checkout" type="b2602c69:ProjectViewProjectNode" />
@@ -230,7 +240,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/www/css/custom-font" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/www/css/app-images" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -243,6 +253,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\write\Documents\UtopiaSoftware\Schools Checkout\www\css\app-images" />
       <recent name="C:\Users\write\Documents\UtopiaSoftware\Schools Checkout\www\css\custom-font" />
       <recent name="C:\Users\write\Documents\UtopiaSoftware\Schools Checkout" />
     </key>
@@ -273,7 +284,9 @@
       <workItem from="1558015732978" duration="16650000" />
       <workItem from="1558182967141" duration="11026000" />
       <workItem from="1558360680079" duration="809000" />
-      <workItem from="1558451737631" duration="7992000" />
+      <workItem from="1558451737631" duration="8029000" />
+      <workItem from="1559213416986" duration="597000" />
+      <workItem from="1561720086684" duration="2613000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1558018018729</created>
@@ -471,11 +484,18 @@
       <option name="project" value="LOCAL" />
       <updated>1558470401588</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="initial commit">
+      <created>1558472576345</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1558472576345</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41428000" />
+    <option name="totallyTimeSpent" value="44675000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="0" />
@@ -512,10 +532,44 @@
     <entry file="file://$PROJECT_DIR$/.babelrc">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/www/search-page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/config.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1547">
           <caret line="91" column="66" selection-start-line="91" selection-start-column="66" selection-end-line="91" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/product-details-page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="45" column="10" selection-start-line="45" selection-start-column="10" selection-end-line="45" selection-end-column="10" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#ons-page#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/login-page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="41" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2244">
+          <caret line="132" column="77" selection-start-line="132" selection-start-column="77" selection-end-line="132" selection-end-column="77" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#ons-modal#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -547,58 +601,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/login-page.html">
+    <entry file="file://$PROJECT_DIR$/www/home-page.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="41" lean-forward="true" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/search-page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="569">
-          <caret line="132" column="77" selection-start-line="132" selection-start-column="77" selection-end-line="132" selection-end-column="77" />
+        <state relative-caret-position="340">
+          <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#ons-modal#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/product-details-page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="45" column="10" selection-start-line="45" selection-start-column="10" selection-end-line="45" selection-end-column="10" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#ons-page#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#ons-toolbar#0;n#ons-page#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-carousel#0;n#ons-page#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ons-carousel-item#0;n#ons-carousel#0;n#ons-page#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/css/app-custom-styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="100" column="31" selection-start-line="100" selection-start-column="25" selection-end-line="100" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/home-page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="77" lean-forward="true" selection-start-line="27" selection-start-column="77" selection-end-line="27" selection-end-column="77" />
-          <folding>
-            <element signature="n#style#0;n#ons-toolbar#0;n#ons-page#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#ons-toolbar#0;n#ons-page#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#ons-toolbar#0;n#ons-page#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#ons-carousel-item#0;n#ons-carousel#0;n#ons-page#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ons-card#0;n#div#0;n#div#0;n#ons-carousel-item#0;n#ons-carousel#0;n#ons-page#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="241">
+          <caret line="281" column="27" selection-start-line="281" selection-start-column="27" selection-end-line="281" selection-end-column="27" />
         </state>
       </provider>
     </entry>
